@@ -143,9 +143,9 @@ Text Label 10525 2725 0    60   ~ 0
 C_CC1
 Text Label 13025 3025 0    60   ~ 0
 C_CC2
-Text Label 9775 4575 0    60   ~ 0
+Text Label 9775 4375 0    60   ~ 0
 C_CC1
-Text Label 9775 4475 0    60   ~ 0
+Text Label 9775 4275 0    60   ~ 0
 C_CC2
 Text Label 9125 5850 2    70   ~ 0
 47346-0001
@@ -187,8 +187,6 @@ Text GLabel 8500 8925 1    50   Input ~ 0
 5V0_DBG
 Text GLabel 8750 8925 1    50   Input ~ 0
 1V8_DBG
-Text GLabel 12975 8675 1    50   Input ~ 0
-5V0_DBG
 Text GLabel 14400 8675 1    50   Input ~ 0
 1V8_DBG
 Text GLabel 13375 6325 1    50   Input ~ 0
@@ -427,47 +425,14 @@ F 3 "" H 8250 6750 70  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jetson-nano-baseboard:GND #GND_0107
-U 1 1 5E710348
-P 9775 6750
-F 0 "#GND_0107" H 9775 6750 20  0001 C CNN
-F 1 "GND" H 9779 6605 30  0000 C CNN
-F 2 "" H 9775 6750 70  0001 C CNN
-F 3 "" H 9775 6750 70  0001 C CNN
-	1    9775 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:GND #SHIELD_OTG_02
-U 1 1 5E710347
-P 8775 6750
-F 0 "#SHIELD_OTG_02" H 8775 6890 20  0001 C CNN
-F 1 "SHIELD_OTG" H 8775 6860 30  0000 C CNN
-F 2 "" H 8775 6750 70  0001 C CNN
-F 3 "" H 8775 6750 70  0001 C CNN
-	1    8775 6750
-	1    0    0    -1  
-$EndComp
-$Comp
 L jetson-nano-baseboard:GND #GND_0108
 U 1 1 5E710346
-P 7000 6925
-F 0 "#GND_0108" H 7000 6925 20  0001 C CNN
-F 1 "GND" H 7004 6780 30  0000 C CNN
-F 2 "" H 7000 6925 70  0001 C CNN
-F 3 "" H 7000 6925 70  0001 C CNN
-	1    7000 6925
-	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:GND #GND_0109
-U 1 1 5E710344
-P 12975 9525
-F 0 "#GND_0109" H 12975 9525 20  0001 C CNN
-F 1 "GND" H 12966 9365 30  0000 C CNN
-F 2 "" H 12975 9525 70  0001 C CNN
-F 3 "" H 12975 9525 70  0001 C CNN
-	1    12975 9525
+P 7325 6800
+F 0 "#GND_0108" H 7325 6800 20  0001 C CNN
+F 1 "GND" H 7329 6655 30  0000 C CNN
+F 2 "" H 7325 6800 70  0001 C CNN
+F 3 "" H 7325 6800 70  0001 C CNN
+	1    7325 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -624,19 +589,6 @@ F 5 "Kingbright" H -33666 -15093 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jetson-nano-baseboard:BLM18SG121TN1D L7
-U 1 1 5E71031F
-P 9475 6600
-F 0 "L7" H 9475 6814 60  0000 C CNN
-F 1 "BLM18SG121TN1D" H 9475 6708 60  0000 C CNN
-F 2 "jetson-nano-baseboard-footprints:0603" H 9175 6700 60  0001 C CNN
-F 3 "" H 9175 6700 60  0001 C CNN
-F 4 "Murata" V 6075 -1793 60  0001 C CNN "Manufacturer"
-F 5 "BLM18SG121TN1D" H -26196 -13305 50  0001 C CNN "MPN"
-	1    9475 6600
-	1    0    0    -1  
-$EndComp
-$Comp
 L jetson-nano-baseboard:Testpad TP22
 U 1 1 5E71031E
 P 7200 6250
@@ -661,19 +613,6 @@ F 4 "N/A" H -31321 -13105 50  0001 C CNN "MPN"
 F 5 "N/A" H -31321 -13105 50  0001 C CNN "Manufacturer"
 	1    6500 2800
 	0    1    1    0   
-$EndComp
-$Comp
-L jetson-nano-baseboard:TLV700 IC15
-U 1 1 5E71031B
-P 13600 9150
-F 0 "IC15" H 13316 9540 60  0000 L BNN
-F 1 "TLV70018DCKT" H 13316 9415 60  0000 L BNN
-F 2 "jetson-nano-baseboard-footprints:SC70-5" H 13300 9350 60  0001 C CNN
-F 3 "" H 13300 9350 60  0001 C CNN
-F 4 "Texas Instrumets" V 1200 7057 60  0001 C CNN "Manufacturer"
-F 5 "TLV70018DCKT" H -24560 -20462 50  0001 C CNN "MPN"
-	1    13600 9150
-	1    0    0    -1  
 $EndComp
 $Comp
 L jetson-nano-baseboard:BLM18EG221SN1D L2
@@ -768,32 +707,8 @@ F 5 "TE" H -33616 -15093 50  0001 C CNN "Manufacturer"
 	1    5000 9775
 	0    -1   -1   0   
 $EndComp
-$Comp
-L jetson-nano-baseboard:BLM18EG221SN1D L3
-U 1 1 5E7102ED
-P 13375 6525
-F 0 "L3" V 13375 6495 60  0000 R TNN
-F 1 "BLM18EG221SN1D" V 13275 6495 60  0000 R TNN
-F 2 "jetson-nano-baseboard-footprints:0603" H 13275 6495 60  0001 C CNN
-F 3 "" H 13275 6495 60  0001 C CNN
-F 4 "BLM18EG221SN1D" H -24985 -20787 50  0001 C CNN "MPN"
-F 5 "Murata" H -24985 -20787 50  0001 C CNN "Manufacturer"
-	1    13375 6525
-	0    -1   -1   0   
-$EndComp
 Text GLabel 1675 5250 1    50   Input ~ 0
 5V0_SYS
-$Comp
-L jetson-nano-baseboard:GND #SHIELD_OTG01
-U 1 1 5E710349
-P 9175 6750
-F 0 "#SHIELD_OTG01" H 9175 6890 20  0001 C CNN
-F 1 "SHIELD_OTG" H 9172 6601 30  0000 C CNN
-F 2 "" H 9175 6750 70  0001 C CNN
-F 3 "" H 9175 6750 70  0001 C CNN
-	1    9175 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 2500 3300 2500
 Wire Wire Line
@@ -878,14 +793,6 @@ Wire Wire Line
 Wire Wire Line
 	2775 5650 2075 5650
 Wire Wire Line
-	9275 6600 9175 6600
-Wire Wire Line
-	9175 6600 9175 6750
-Wire Wire Line
-	9675 6600 9775 6600
-Wire Wire Line
-	9775 6600 9775 6750
-Wire Wire Line
 	7675 6050 8025 6050
 $Comp
 L jetson-nano-baseboard:Micro_USB_B J5
@@ -909,8 +816,6 @@ Wire Wire Line
 	8275 6350 8250 6350
 Wire Wire Line
 	8250 6350 8250 6750
-Wire Wire Line
-	7925 6500 7925 6150
 Connection ~ 7925 6150
 Wire Wire Line
 	7925 6150 7675 6150
@@ -918,11 +823,7 @@ Connection ~ 8025 6050
 Wire Wire Line
 	8025 6050 8275 6050
 Wire Wire Line
-	7250 6675 7000 6675
-Wire Wire Line
-	7000 6675 7000 6925
-Wire Wire Line
-	6725 6500 6725 5950
+	7325 6550 7325 6800
 Connection ~ 6725 5950
 Wire Wire Line
 	6725 5950 6625 5950
@@ -1050,22 +951,13 @@ Wire Wire Line
 Wire Wire Line
 	14400 8675 14400 9050
 Wire Wire Line
-	13100 9150 12975 9150
-Wire Wire Line
-	13100 9050 12975 9050
-Wire Wire Line
-	12975 9050 12975 9150
-Wire Wire Line
-	12975 9050 12975 8675
-Connection ~ 12975 9050
-Wire Wire Line
 	10225 4675 10150 4675
 Wire Wire Line
 	10150 4675 10150 4750
 Wire Wire Line
-	9775 4575 10225 4575
+	9775 4375 10225 4375
 Wire Wire Line
-	9775 4475 10225 4475
+	9775 4275 10225 4275
 Wire Wire Line
 	11075 4775 11875 4775
 Wire Wire Line
@@ -1820,20 +1712,6 @@ Wire Wire Line
 Wire Wire Line
 	14875 2475 14875 2525
 $Comp
-L jetson-nano-baseboard:C_2u2_0402 C67
-U 1 1 6273B65E
-P 12975 9350
-F 0 "C67" H 12700 9325 60  0000 L CNN
-F 1 "C_2u2_0402" H 12975 9200 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:0402-cap" H 13175 9550 60  0001 L CNN
-F 3 "" H 12975 9350 50  0001 C CNN
-F 4 "TDK" H 13175 9750 60  0001 L CNN "Manufacturer"
-F 5 "C1005X5R1A225K050BC" H 13175 9650 60  0001 L CNN "MPN"
-F 6 "2u2" H 12725 9400 50  0000 L CNN "Val"
-	1    12975 9350
-	-1   0    0    1   
-$EndComp
-$Comp
 L jetson-nano-baseboard:C_1u_0402 C66
 U 1 1 6273C14B
 P 14400 9275
@@ -1847,11 +1725,6 @@ F 6 "1u" H 14200 9300 50  0000 L CNN "Val"
 	1    14400 9275
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	12975 9525 12975 9500
-Wire Wire Line
-	12975 9200 12975 9150
-Connection ~ 12975 9150
 Wire Wire Line
 	14400 9425 14400 9475
 Wire Wire Line
@@ -2189,25 +2062,25 @@ F 7 "DNP" H 3050 9875 50  0000 C CNN "DNP"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U?
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
 U 1 1 61FB5553
-P 7450 6775
-F 0 "U?" V 7823 6775 50  0000 C CNN
-F 1 "TPD4E05U06QDQARQ1" H 7500 6375 50  0001 L CNN
-F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 7500 7225 50  0001 L CNN
-F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 7450 7175 50  0001 L CNN
-F 4 "Texas Instruments" V 7914 6775 50  0000 C CNN "Manufacturer"
-F 5 "TPD4E05U06QDQARQ1" V 8005 6775 50  0000 C CNN "MPN"
-	1    7450 6775
-	0    1    1    0   
+P 6825 6650
+F 0 "U?" V 7198 6650 50  0000 C CNN
+F 1 "TPD4E05U06QDQARQ1" H 6875 6250 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 6875 7100 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 6825 7050 50  0001 L CNN
+F 4 "Texas Instruments" V 7289 6650 50  0000 C CNN "Manufacturer"
+F 5 "TPD4E05U06QDQARQ1" V 7380 6650 50  0000 C CNN "MPN"
+	1    6825 6650
+	0    -1   1    0   
 $EndComp
 $Comp
-L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U?
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
 U 1 1 61FBEC77
 P 10275 4475
 F 0 "U?" H 10392 5030 50  0000 C CNN
 F 1 "TPD4E05U06QDQARQ1" H 10325 4075 50  0001 L CNN
-F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 10325 4925 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 10325 4925 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 10275 4875 50  0001 L CNN
 F 4 "Texas Instruments" H 10392 4939 50  0000 C CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" H 10392 4848 50  0000 C CNN "MPN"
@@ -2215,12 +2088,12 @@ F 5 "TPD4E05U06QDQARQ1" H 10392 4848 50  0000 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U?
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
 U 1 1 61FE29FF
 P 11925 4675
 F 0 "U?" H 12042 5230 50  0000 C CNN
 F 1 "TPD4E05U06QDQARQ1" H 11975 4275 50  0001 L CNN
-F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 11975 5125 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 11975 5125 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 11925 5075 50  0001 L CNN
 F 4 "Texas Instruments" H 12042 5139 50  0000 C CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" H 12042 5048 50  0000 C CNN "MPN"
@@ -2228,12 +2101,12 @@ F 5 "TPD4E05U06QDQARQ1" H 12042 5048 50  0000 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U?
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
 U 1 1 61FF8D6D
 P 13700 4675
 F 0 "U?" H 13817 5230 50  0000 C CNN
 F 1 "TPD4E05U06QDQARQ1" H 13750 4275 50  0001 L CNN
-F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 13750 5125 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 13750 5125 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 13700 5075 50  0001 L CNN
 F 4 "Texas Instruments" H 13817 5139 50  0000 C CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" H 13817 5048 50  0000 C CNN "MPN"
@@ -2247,12 +2120,12 @@ Wire Wire Line
 Wire Wire Line
 	12975 7075 12675 7075
 $Comp
-L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U?
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
 U 1 1 62017093
 P 13175 7175
 F 0 "U?" V 13575 6850 50  0000 L CNN
 F 1 "TPD4E05U06QDQARQ1" H 13225 6775 50  0001 L CNN
-F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 13225 7625 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 13225 7625 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 13175 7575 50  0001 L CNN
 F 4 "Texas Instruments" V 13675 6850 50  0000 L CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" V 13775 6850 50  0000 L CNN "MPN"
@@ -2262,25 +2135,113 @@ $EndComp
 Wire Wire Line
 	12975 7075 12975 7125
 Wire Wire Line
-	7250 6675 7250 6725
-Wire Wire Line
-	6725 6500 7450 6500
-Wire Wire Line
-	7450 6500 7450 6725
-Wire Wire Line
-	6625 6600 7350 6600
-Wire Wire Line
-	7350 6600 7350 6725
+	7625 6550 7625 6600
 Wire Wire Line
 	6625 5950 6625 6600
 Wire Wire Line
-	7925 6500 7550 6500
-Wire Wire Line
-	7550 6500 7550 6725
-Wire Wire Line
-	8025 6600 7650 6600
-Wire Wire Line
-	7650 6600 7650 6725
-Wire Wire Line
 	8025 6050 8025 6600
+NoConn ~ 10225 4475
+NoConn ~ 10225 4575
+$Comp
+L jetson-nano-baseboard:BLM18EG221SN1D L3
+U 1 1 5E7102ED
+P 13375 6525
+F 0 "L3" V 13375 6495 60  0000 R TNN
+F 1 "BLM18EG221SN1D" V 13275 6495 60  0000 R TNN
+F 2 "jetson-nano-baseboard-footprints:0603" H 13275 6495 60  0001 C CNN
+F 3 "" H 13275 6495 60  0001 C CNN
+F 4 "BLM18EG221SN1D" H -24985 -20787 50  0001 C CNN "MPN"
+F 5 "Murata" H -24985 -20787 50  0001 C CNN "Manufacturer"
+	1    13375 6525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L jetson-nano-baseboard:GND #GND_?
+U 1 1 622610D8
+P 8775 6750
+F 0 "#GND_?" H 8775 6750 20  0001 C CNN
+F 1 "GND" H 8779 6605 30  0000 C CNN
+F 2 "" H 8775 6750 70  0001 C CNN
+F 3 "" H 8775 6750 70  0001 C CNN
+	1    8775 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 5950 6725 6600
+$Comp
+L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U?
+U 1 1 6231E4F6
+P 7825 6650
+F 0 "U?" V 8198 6650 50  0000 C CNN
+F 1 "TPD4E05U06QDQARQ1" H 7875 6250 50  0001 L CNN
+F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 7875 7100 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 7825 7050 50  0001 L CNN
+F 4 "Texas Instruments" V 8289 6650 50  0000 C CNN "Manufacturer"
+F 5 "TPD4E05U06QDQARQ1" V 8380 6650 50  0000 C CNN "MPN"
+	1    7825 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7925 6150 7925 6600
+Connection ~ 7325 6550
+Wire Wire Line
+	7325 6550 7625 6550
+Wire Wire Line
+	7025 6550 7025 6600
+Wire Wire Line
+	7025 6550 7325 6550
+Connection ~ 13175 9150
+Wire Wire Line
+	13175 9200 13175 9150
+Wire Wire Line
+	13175 9525 13175 9500
+$Comp
+L jetson-nano-baseboard:C_2u2_0402 C67
+U 1 1 6273B65E
+P 13175 9350
+F 0 "C67" H 12900 9325 60  0000 L CNN
+F 1 "C_2u2_0402" H 13175 9200 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:0402-cap" H 13375 9550 60  0001 L CNN
+F 3 "" H 13175 9350 50  0001 C CNN
+F 4 "TDK" H 13375 9750 60  0001 L CNN "Manufacturer"
+F 5 "C1005X5R1A225K050BC" H 13375 9650 60  0001 L CNN "MPN"
+F 6 "2u2" H 12925 9400 50  0000 L CNN "Val"
+	1    13175 9350
+	-1   0    0    1   
+$EndComp
+Connection ~ 13175 9050
+Wire Wire Line
+	13175 9050 13175 8675
+Wire Wire Line
+	13175 9050 13175 9150
+Wire Wire Line
+	13300 9050 13175 9050
+Wire Wire Line
+	13300 9150 13175 9150
+$Comp
+L jetson-nano-baseboard:GND #GND_0109
+U 1 1 5E710344
+P 13175 9525
+F 0 "#GND_0109" H 13175 9525 20  0001 C CNN
+F 1 "GND" H 13166 9365 30  0000 C CNN
+F 2 "" H 13175 9525 70  0001 C CNN
+F 3 "" H 13175 9525 70  0001 C CNN
+	1    13175 9525
+	1    0    0    -1  
+$EndComp
+Text GLabel 13175 8675 1    50   Input ~ 0
+5V0_DBG
+$Comp
+L antmicroPMICVoltageRegulatorsLinear:TPS7A0518PDBVT IC?
+U 1 1 6241F94F
+P 13700 9100
+F 0 "IC?" H 13700 9581 50  0000 C CNN
+F 1 "TPS7A0518PDBVT" H 13700 9498 39  0000 C CNN
+F 2 "antmicro-footprints:SOT-23-5" H 13700 8850 50  0001 C CNN
+F 3 "" H 13700 9100 50  0001 C CNN
+F 4 "TPS7A0518PDBVT" H 13700 9415 50  0000 C CNN "MPN"
+F 5 "Texas Instruments" H 13700 9324 50  0000 C CNN "Manufacturer"
+	1    13700 9100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
