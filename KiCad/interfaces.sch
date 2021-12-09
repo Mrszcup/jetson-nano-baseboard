@@ -806,19 +806,6 @@ $EndComp
 Text GLabel 11225 5300 0    50   Input ~ 0
 3V3_SYS
 $Comp
-L jetson-nano-baseboard:9774040151 SP7
-U 1 1 5E710438
-P 5500 9300
-F 0 "SP7" H 5625 9075 60  0000 R TNN
-F 1 "9774040151" H 5600 9175 60  0000 R TNN
-F 2 "jetson-nano-baseboard-footprints:9774060151" H 5600 9500 60  0001 C CNN
-F 3 "" H 5600 9500 60  0001 C CNN
-F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
-F 5 "9774040151" H 5500 9300 50  0001 C CNN "MPN"
-	1    5500 9300
-	-1   0    0    1   
-$EndComp
-$Comp
 L antmicroPciConnectors:1-2199230-6 J?
 U 1 1 6246454E
 P 5475 7150
@@ -830,5 +817,18 @@ F 4 "TE" H 5475 9717 50  0000 C CNN "Manufacturer"
 F 5 "1-2199230-6" H 5475 9626 50  0000 C CNN "MPN"
 	1    5475 7150
 	1    0    0    -1  
+$EndComp
+$Comp
+L antmicroMechanicalParts:9774025151 SP?
+U 1 1 6248F20F
+P 5500 9300
+F 0 "SP?" H 5443 9011 60  0000 C CNN
+F 1 "9774025151" H 5443 9117 60  0000 C CNN
+F 2 "antmicro-footprints:9774025151" H 5500 9300 60  0001 C CNN
+F 3 "" H 5500 9300 60  0001 C CNN
+F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
+F 5 "9774025151" H 5500 9300 50  0001 C CNN "MPN"
+	1    5500 9300
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

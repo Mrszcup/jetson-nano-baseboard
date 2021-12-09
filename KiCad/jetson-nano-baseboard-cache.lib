@@ -1,6 +1,22 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# antmicroMechanicalParts_9774025151
+#
+DEF antmicroMechanicalParts_9774025151 SP 0 40 Y Y 1 F N
+F0 "SP" -100 100 60 H V L BNN
+F1 "antmicroMechanicalParts_9774025151" -100 -200 60 H V L BNN
+F2 "antmicro-footprints:9774025151" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+F4 "Wurth Elektronik" 0 0 50 H I C CNN "Manufacturer"
+F5 "9774025151" 0 0 50 H I C CNN "MPN"
+DRAW
+S -100 -100 100 100 0 1 10 f
+S -50 -50 50 50 0 1 10 f
+X 1 1 -200 0 100 R 1 1 0 1 P
+ENDDRAW
+ENDDEF
+#
 # antmicroPMICVoltageRegulatorsLinear_TPS7A0518PDBVT
 #
 DEF antmicroPMICVoltageRegulatorsLinear_TPS7A0518PDBVT IC 0 40 Y Y 1 F N
@@ -232,22 +248,6 @@ X ~2Y 6 600 100 200 L 70 70 0 1 P
 X GND 7 0 -800 200 U 70 70 0 1 P
 X ~3Y 8 600 -100 200 L 70 70 0 1 P
 X 3A 9 -600 -100 200 R 70 70 0 1 P
-ENDDRAW
-ENDDEF
-#
-# jetson-nano-baseboard_9774040151
-#
-DEF jetson-nano-baseboard_9774040151 SP 0 40 Y Y 1 F N
-F0 "SP" -100 100 60 H V L BNN
-F1 "jetson-nano-baseboard_9774040151" -100 -200 60 H V L BNN
-F2 "jetson-nano-baseboard-footprints:M2.5-4mm" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-F4 "Wurth Elektronik" 0 0 50 H I C CNN "Manufacturer"
-F5 "9774040151" 0 0 50 H I C CNN "MPN"
-DRAW
-S -100 -100 100 100 0 1 10 f
-S -50 -50 50 50 0 1 10 f
-X 1 1 -200 0 100 R 1 1 0 1 P
 ENDDRAW
 ENDDEF
 #
