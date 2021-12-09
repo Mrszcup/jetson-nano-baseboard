@@ -678,18 +678,7 @@ Wire Wire Line
 	3225 2200 3225 2100
 Text GLabel 5925 1350 0    50   Input ~ 0
 5V0_SYS
-$Comp
-L jetson-nano-baseboard:Ferrite_Bead_Small FB4
-U 1 1 61C66316
-P 1350 2100
-F 0 "FB4" V 1225 2100 50  0000 C CNN
-F 1 "742792022 " V 1450 2100 50  0000 C CNN
-F 2 "jetson-nano-baseboard-footprints:0805-cap" V 1280 2100 50  0001 C CNN
-F 3 "~" H 1350 2100 50  0001 C CNN
-	1    1350 2100
-	0    1    1    0   
-$EndComp
-Text GLabel 1250 2100 0    50   Input ~ 0
+Text GLabel 1050 2100 0    50   Input ~ 0
 VIN
 Wire Wire Line
 	2325 2225 2325 2100
@@ -1116,18 +1105,7 @@ Wire Wire Line
 	3275 5050 3650 5050
 Text Label 3325 5050 0    50   ~ 0
 3V3_EN
-$Comp
-L jetson-nano-baseboard:Ferrite_Bead_Small FB3
-U 1 1 61E2F9C4
-P 1325 5250
-F 0 "FB3" V 1200 5250 50  0000 C CNN
-F 1 "742792022 " V 1425 5250 50  0000 C CNN
-F 2 "jetson-nano-baseboard-footprints:0805-cap" V 1255 5250 50  0001 C CNN
-F 3 "~" H 1325 5250 50  0001 C CNN
-	1    1325 5250
-	0    1    1    0   
-$EndComp
-Text GLabel 1225 5250 0    50   Input ~ 0
+Text GLabel 1025 5250 0    50   Input ~ 0
 VIN
 $Comp
 L jetson-nano-baseboard:C_1u_0402 C87
@@ -1720,4 +1698,30 @@ Wire Wire Line
 Wire Wire Line
 	9425 9025 9425 9075
 Connection ~ 9225 9025
+$Comp
+L antmicroFerriteBeadsandChips:74279221100 FB?
+U 1 1 624FA3DC
+P 1250 2100
+F 0 "FB?" H 1250 2387 60  0000 C CNN
+F 1 "74279221100" H 1250 2281 60  0000 C CNN
+F 2 "antmicro-footprints:1206-res" H 1450 2300 60  0001 L CNN
+F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 1450 2400 60  0001 L CNN
+F 4 "74279221100" H 1450 2600 60  0001 L CNN "MPN"
+F 5 "Wurth Electronic" H 1450 3200 60  0001 L CNN "Manufacturer"
+	1    1250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L antmicroFerriteBeadsandChips:74279221100 FB?
+U 1 1 6250F269
+P 1225 5250
+F 0 "FB?" H 1225 5537 60  0000 C CNN
+F 1 "74279221100" H 1225 5431 60  0000 C CNN
+F 2 "antmicro-footprints:1206-res" H 1425 5450 60  0001 L CNN
+F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 1425 5550 60  0001 L CNN
+F 4 "74279221100" H 1425 5750 60  0001 L CNN "MPN"
+F 5 "Wurth Electronic" H 1425 6350 60  0001 L CNN "Manufacturer"
+	1    1225 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

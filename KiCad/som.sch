@@ -1520,23 +1520,6 @@ Wire Wire Line
 	14100 5200 14350 5200
 Wire Wire Line
 	14650 5200 14750 5200
-Wire Wire Line
-	14125 2050 14400 2050
-Wire Wire Line
-	14600 2050 14800 2050
-$Comp
-L jetson-nano-baseboard:Ferrite_Bead_Small FB?
-U 1 1 618512B9
-P 14500 2050
-AR Path="/608DC6E9/618512B9" Ref="FB?"  Part="1" 
-AR Path="/610ACCAB/618512B9" Ref="FB2"  Part="1" 
-F 0 "FB2" V 14375 2050 50  0000 C CNN
-F 1 "742792022 " V 14625 2050 50  0000 C CNN
-F 2 "jetson-nano-baseboard-footprints:0805-cap" V 14430 2050 50  0001 C CNN
-F 3 "~" H 14500 2050 50  0001 C CNN
-	1    14500 2050
-	0    1    1    0   
-$EndComp
 $Comp
 L jetson-nano-baseboard:SPACER SP6
 U 1 1 5E7103ED
@@ -1680,4 +1663,21 @@ USR_LED
 Text GLabel 13225 7675 2    50   Output ~ 0
 USR_BUTTON
 NoConn ~ 1875 10550
+Wire Wire Line
+	14125 2050 14275 2050
+$Comp
+L antmicroFerriteBeadsandChips:74279221100 FB?
+U 1 1 62552116
+P 14475 2050
+F 0 "FB?" H 14475 2200 60  0000 C CNN
+F 1 "74279221100" H 14475 1875 60  0000 C CNN
+F 2 "antmicro-footprints:1206-res" H 14675 2250 60  0001 L CNN
+F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 14675 2350 60  0001 L CNN
+F 4 "74279221100" H 14675 2550 60  0001 L CNN "MPN"
+F 5 "Wurth Electronic" H 14675 3150 60  0001 L CNN "Manufacturer"
+	1    14475 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14675 2050 14800 2050
 $EndSCHEMATC
