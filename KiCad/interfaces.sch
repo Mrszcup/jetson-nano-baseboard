@@ -37,8 +37,6 @@ Text Label 6575 7900 0    60   ~ 0
 C_PCIE0_TX3_N
 Text Label 6575 7800 0    60   ~ 0
 C_PCIE0_TX3_P
-Text Label 4893 4739 0    70   ~ 0
-MDT580M01001
 Text GLabel 11225 6400 0    50   Input ~ 0
 3V3_SYS
 Text GLabel 3175 4750 1    50   Input ~ 0
@@ -117,19 +115,6 @@ F 2 "" H 5775 9375 70  0001 C CNN
 F 3 "" H 5775 9375 70  0001 C CNN
 	1    5775 9375
 	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:9774040151 SP7
-U 1 1 5E710438
-P 5500 9300
-F 0 "SP7" H 5625 9075 60  0000 R TNN
-F 1 "9774040151" H 5600 9175 60  0000 R TNN
-F 2 "jetson-nano-baseboard-footprints:9774060151" H 5600 9500 60  0001 C CNN
-F 3 "" H 5600 9500 60  0001 C CNN
-F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
-F 5 "9774040151" H 5500 9300 50  0001 C CNN "MPN"
-	1    5500 9300
-	-1   0    0    1   
 $EndComp
 $Comp
 L jetson-nano-baseboard:LED NVME1
@@ -338,19 +323,6 @@ Wire Wire Line
 Wire Wire Line
 	4475 5000 4475 5100
 Connection ~ 4475 5100
-$Comp
-L jetson-nano-baseboard:MDT580M01001 J8
-U 1 1 5E710439
-P 5475 7150
-F 0 "J8" H 4875 9750 60  0000 L BNN
-F 1 "~" H 5325 5450 60  0000 C CNN
-F 2 "jetson-nano-baseboard-footprints:MDT580M01001" H 5325 5450 60  0001 C CNN
-F 3 "" H 5475 7150 60  0000 C CNN
-F 4 "Amphenol" H 4160 5862 60  0001 C CNN "Manufacturer"
-F 5 "MDT580M01001" H 5194 5434 60  0001 C CNN "MPN"
-	1    5475 7150
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4675 5600
 NoConn ~ 4675 5700
 NoConn ~ 4675 6100
@@ -833,4 +805,30 @@ F 6 "220R" H 11525 5200 50  0000 C CNN "Val"
 $EndComp
 Text GLabel 11225 5300 0    50   Input ~ 0
 3V3_SYS
+$Comp
+L jetson-nano-baseboard:9774040151 SP7
+U 1 1 5E710438
+P 5500 9300
+F 0 "SP7" H 5625 9075 60  0000 R TNN
+F 1 "9774040151" H 5600 9175 60  0000 R TNN
+F 2 "jetson-nano-baseboard-footprints:9774060151" H 5600 9500 60  0001 C CNN
+F 3 "" H 5600 9500 60  0001 C CNN
+F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
+F 5 "9774040151" H 5500 9300 50  0001 C CNN "MPN"
+	1    5500 9300
+	-1   0    0    1   
+$EndComp
+$Comp
+L antmicroPciConnectors:1-2199230-6 J?
+U 1 1 6246454E
+P 5475 7150
+F 0 "J?" H 5475 9815 60  0000 C CNN
+F 1 "1-2199230-6" H 5325 5450 60  0001 C CNN
+F 2 "antmicro-footprints:1-2199230-6" H 5325 5450 60  0001 C CNN
+F 3 "" H 5325 7150 60  0001 C CNN
+F 4 "TE" H 5475 9717 50  0000 C CNN "Manufacturer"
+F 5 "1-2199230-6" H 5475 9626 50  0000 C CNN "MPN"
+	1    5475 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
