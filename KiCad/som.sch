@@ -1666,10 +1666,10 @@ NoConn ~ 1875 10550
 Wire Wire Line
 	14125 2050 14275 2050
 $Comp
-L antmicroFerriteBeadsandChips:74279221100 FB?
+L antmicroFerriteBeadsandChips:74279221100 FB3
 U 1 1 62552116
 P 14475 2050
-F 0 "FB?" H 14475 2200 60  0000 C CNN
+F 0 "FB3" H 14475 2200 60  0000 C CNN
 F 1 "74279221100" H 14475 1875 60  0000 C CNN
 F 2 "antmicro-footprints:1206-res" H 14675 2250 60  0001 L CNN
 F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 14675 2350 60  0001 L CNN
