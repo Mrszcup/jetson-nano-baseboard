@@ -774,19 +774,6 @@ Wire Wire Line
 	7600 7200 8375 7200
 Wire Wire Line
 	7600 7800 8400 7800
-$Comp
-L jetson-nano-baseboard:SI-51005-F J3
-U 1 1 61B50EDA
-P 12525 6200
-F 0 "J3" H 12525 7565 60  0000 C CNN
-F 1 "SI-51005-F" H 12525 7383 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:SI-51005-F" H 12525 5250 60  0001 C CNN
-F 3 "https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-si-51005-fb.pdf" H 12525 6200 60  0001 C CNN
-F 4 "Bel Magnetic Solutions " H 12525 7467 50  0000 C CNN "Manufacturer"
-F 5 "SI-51005-F " H 12525 7376 50  0000 C CNN "MPN"
-	1    12525 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11375 5300 11225 5300
 $Comp
@@ -830,5 +817,18 @@ F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
 F 5 "9774025151" H 5500 9300 50  0001 C CNN "MPN"
 	1    5500 9300
 	-1   0    0    1   
+$EndComp
+$Comp
+L antmicroModularConnectorsJacksWithMagnetics:SI-51005-F J3
+U 1 1 61D7A49A
+P 12525 6200
+F 0 "J3" H 12525 7489 60  0000 C CNN
+F 1 "SI-51005-F" H 12525 7383 60  0000 C CNN
+F 2 "antmicro-footprints:SI-51005-F" H 12525 5250 60  0001 C CNN
+F 3 "https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-si-51005-fb.pdf" H 12525 6200 60  0001 C CNN
+F 4 "Bel Magnetic Solutions " H 12525 6200 50  0001 C CNN "Manufacturer"
+F 5 "SI-51005-F " H 12525 6200 50  0001 C CNN "MPN"
+	1    12525 6200
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
