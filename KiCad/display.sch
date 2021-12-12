@@ -2114,8 +2114,6 @@ Connection ~ 13725 8850
 Wire Wire Line
 	13725 8850 14750 8850
 NoConn ~ 13825 9225
-Text Label 14750 9000 2    60   ~ 0
-DP_HPD_IN
 Wire Wire Line
 	14750 9000 13925 9000
 Wire Wire Line
@@ -2160,4 +2158,8 @@ Wire Wire Line
 	10550 10025 10550 10400
 NoConn ~ 10750 10400
 NoConn ~ 10850 10400
+Text Label 12950 3075 0    60   ~ 0
+TMDS_CEC_GND
+Text Label 14750 9000 2    60   ~ 0
+TMDS_CEC_GND
 $EndSCHEMATC

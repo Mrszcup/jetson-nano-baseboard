@@ -143,9 +143,9 @@ Text Label 10525 2725 0    60   ~ 0
 C_CC1
 Text Label 13025 3025 0    60   ~ 0
 C_CC2
-Text Label 9775 4375 0    60   ~ 0
-C_CC1
 Text Label 9775 4275 0    60   ~ 0
+C_CC1
+Text Label 9775 4375 0    60   ~ 0
 C_CC2
 Text Label 9125 5850 2    70   ~ 0
 47346-0001
