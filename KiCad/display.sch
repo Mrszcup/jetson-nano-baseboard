@@ -109,24 +109,6 @@ Text Label 3250 2400 2    60   ~ 0
 EDP0_TX_N
 Text Label 3250 2500 2    60   ~ 0
 EDP0_TX_P
-Text Label 3260 1800 2    60   ~ 0
-EDP3_TX_N
-Wire Wire Line
-	2500 1800 3260 1800
-Wire Wire Line
-	2500 1900 3250 1900
-Wire Wire Line
-	2500 2000 3250 2000
-Wire Wire Line
-	2500 2100 3250 2100
-Wire Wire Line
-	2500 2200 3250 2200
-Wire Wire Line
-	2500 2300 3250 2300
-Wire Wire Line
-	2500 2400 3250 2400
-Wire Wire Line
-	2500 2500 3250 2500
 Wire Wire Line
 	2500 2800 3250 2800
 Wire Wire Line
@@ -185,8 +167,6 @@ F 5 "N/A" H -15248 -15703 50  0001 C CNN "Manufacturer"
 	1    3300 2700
 	0    1    1    0   
 $EndComp
-Text Notes 923  6628 0    96   ~ 0
-DisplayPort Interface
 $Comp
 L jetson-nano-baseboard:46756-1001 J1
 U 1 1 616F319B
@@ -1312,46 +1292,6 @@ F 3 "" H 11275 8025 70  0001 C CNN
 $EndComp
 Text GLabel 11275 7575 1    50   Input ~ 0
 3V3_SYS
-Wire Wire Line
-	1675 8800 1075 8800
-Wire Wire Line
-	1675 8500 1075 8500
-Wire Wire Line
-	1675 8200 1075 8200
-Wire Wire Line
-	1675 7900 1075 7900
-Wire Wire Line
-	1675 7600 1075 7600
-Wire Wire Line
-	1825 8700 1075 8700
-Wire Wire Line
-	1825 8400 1075 8400
-Wire Wire Line
-	1825 8100 1075 8100
-Wire Wire Line
-	1825 7800 1075 7800
-Wire Wire Line
-	1825 7500 1075 7500
-Text Label 1075 7500 0    60   ~ 0
-EDP0_TX_P
-Text Label 1075 7600 0    60   ~ 0
-EDP0_TX_N
-Text Label 1075 7800 0    60   ~ 0
-EDP1_TX_P
-Text Label 1075 7900 0    60   ~ 0
-EDP1_TX_N
-Text Label 1075 8700 0    60   ~ 0
-EDP_AUX_P
-Text Label 1075 8800 0    60   ~ 0
-EDP_AUX_N
-Text Label 1075 8100 0    60   ~ 0
-EDP2_TX_P
-Text Label 1075 8200 0    60   ~ 0
-EDP2_TX_N
-Text Label 1075 8400 0    60   ~ 0
-EDP3_TX_P
-Text Label 1075 8500 0    60   ~ 0
-EDP3_TX_N
 Text Label 4750 3450 0    60   ~ 0
 TMDS_CLK_N
 Text Label 3250 3500 2    60   ~ 0
@@ -1452,8 +1392,40 @@ Text Label 12950 3075 0    60   ~ 0
 TMDS_CEC_GND
 Text Label 14750 9000 2    60   ~ 0
 TMDS_CEC_GND
-Text Label 1875 7275 2    60   ~ 0
-DP_HPD_IN
 Wire Wire Line
-	1375 7275 1875 7275
+	2500 1800 3250 1800
+Text Label 3250 1800 2    60   ~ 0
+EDP3_TX_N
+Wire Wire Line
+	2500 1900 3250 1900
+Wire Wire Line
+	2500 2000 3250 2000
+Wire Wire Line
+	2500 2100 3250 2100
+Wire Wire Line
+	2500 2200 3250 2200
+Wire Wire Line
+	2500 2300 3250 2300
+Wire Wire Line
+	2500 2400 3250 2400
+Wire Wire Line
+	2500 2500 3250 2500
+Text GLabel 3250 1800 2    50   Input ~ 0
+EDP3_TX_N
+Text GLabel 3250 1900 2    50   Input ~ 0
+EDP3_TX_P
+Text GLabel 3250 2000 2    50   Input ~ 0
+EDP2_TX_N
+Text GLabel 3250 2100 2    50   Input ~ 0
+EDP2_TX_P
+Text GLabel 3250 2200 2    50   Input ~ 0
+EDP1_TX_N
+Text GLabel 3250 2300 2    50   Input ~ 0
+EDP1_TX_P
+Text GLabel 3250 2400 2    50   Input ~ 0
+EDP0_TX_N
+Text GLabel 3250 2500 2    50   Input ~ 0
+EDP0_TX_P
+Text GLabel 3250 2800 2    50   Input ~ 0
+DP_HDP
 $EndSCHEMATC
