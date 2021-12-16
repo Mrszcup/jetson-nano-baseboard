@@ -1428,4 +1428,8 @@ Text GLabel 3250 2500 2    50   Input ~ 0
 EDP0_TX_P
 Text GLabel 3250 2800 2    50   Input ~ 0
 DP_HDP
+Text GLabel 3250 3200 2    50   Input ~ 0
+EDP_AUX_P
+Text GLabel 3250 3300 2    50   Input ~ 0
+EDP_AUX_N
 $EndSCHEMATC
