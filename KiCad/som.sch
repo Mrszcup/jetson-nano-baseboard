@@ -13,10 +13,6 @@ Comment2 "Antmicro Ltd"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 6450 5950 0    60   ~ 0
-USB2_D_P
-Text Label 6450 5850 0    60   ~ 0
-USB2_D_N
 Text Notes 10055 10037 0    96   ~ 0
 Mechanical model
 Text Notes 13555 8337 0    59   ~ 12
@@ -47,22 +43,6 @@ Text Label 3925 1275 0    60   ~ 0
 PMIC_BBAT
 Text Label 14275 2600 2    60   ~ 0
 PMIC_BBAT
-Text Label 10525 2075 0    60   ~ 0
-PCIE1_RX0_N
-Text Label 10525 1975 0    60   ~ 0
-PCIE1_RX0_P
-Text Label 10525 1875 0    60   ~ 0
-PCIE1_TX0_N
-Text Label 10525 1775 0    60   ~ 0
-PCIE1_TX0_P
-Text Label 10525 1675 0    60   ~ 0
-PCIE1_CLK_N
-Text Label 10525 1575 0    60   ~ 0
-PCIE1_CLK_P
-Text Label 10525 1475 0    60   ~ 0
-PCIE1_CLKREQ
-Text Label 10525 1375 0    60   ~ 0
-PCIE1_RST
 Text Notes 2669 49363 0    60   ~ 0
 Text
 Text Notes 2669 49363 0    60   ~ 0
@@ -73,8 +53,6 @@ Text GLabel 11525 4025 1    50   Input ~ 0
 5V0_SYS
 Text GLabel 12800 4025 1    50   Input ~ 0
 5V0_SYS
-Text GLabel 11300 1125 1    50   Input ~ 0
-3V3_SYS
 Text GLabel 14125 2050 0    50   Input ~ 0
 5V0_SYS
 Text GLabel 13650 9225 0    50   Input ~ 0
@@ -204,17 +182,6 @@ F 1 "GND" H 13770 2887 30  0000 C CNN
 F 2 "" H 13775 3025 70  0001 C CNN
 F 3 "" H 13775 3025 70  0001 C CNN
 	1    13775 3025
-	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:GND #GND_055
-U 1 1 5E710414
-P 11300 2250
-F 0 "#GND_055" H 11300 2250 20  0001 C CNN
-F 1 "GND" H 11295 2112 30  0000 C CNN
-F 2 "" H 11300 2250 70  0001 C CNN
-F 3 "" H 11300 2250 70  0001 C CNN
-	1    11300 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -413,19 +380,6 @@ F 3 "" H 13885 2715 60  0001 C CNN
 F 4 "MS621FE-FL11E" H -2705 -7037 50  0001 C CNN "MPN"
 F 5 "Seiko" H -2705 -7037 50  0001 C CNN "Manufacturer"
 	1    13775 2825
-	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:ADAM-TECH_PCA-10 J10
-U 1 1 5E7103EF
-P 11650 1675
-F 0 "J10" H 11650 975 60  0000 L BNN
-F 1 "~" H 11650 1675 50  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:PCA-10" H 11650 1675 50  0001 C CNN
-F 3 "" H 11650 1675 50  0001 C CNN
-F 4 "PCA-10" H -9930 -4187 50  0001 C CNN "MPN"
-F 5 "Adam Tech" H -9930 -4187 50  0001 C CNN "Manufacturer"
-	1    11650 1675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1015,30 +969,6 @@ Wire Wire Line
 Wire Wire Line
 	15100 9225 15100 9425
 Wire Wire Line
-	11450 1275 11300 1275
-Wire Wire Line
-	11450 1375 10525 1375
-Wire Wire Line
-	11450 1475 10525 1475
-Wire Wire Line
-	10525 1575 11450 1575
-Wire Wire Line
-	10525 1675 11450 1675
-Wire Wire Line
-	10525 1775 11450 1775
-Wire Wire Line
-	10525 1875 11450 1875
-Wire Wire Line
-	10525 1975 11450 1975
-Wire Wire Line
-	10525 2075 11450 2075
-Wire Wire Line
-	11450 2175 11300 2175
-Wire Wire Line
-	11300 2175 11300 2250
-Wire Wire Line
-	11300 1125 11300 1275
-Wire Wire Line
 	11825 5025 11975 5025
 Wire Wire Line
 	13100 5025 13250 5025
@@ -1199,9 +1129,9 @@ Wire Wire Line
 Wire Wire Line
 	7275 5650 6825 5650
 Wire Wire Line
-	6450 5850 7275 5850
+	6825 5850 7275 5850
 Wire Wire Line
-	7275 5950 6450 5950
+	7275 5950 6825 5950
 Wire Wire Line
 	7275 1350 6450 1350
 Wire Wire Line
@@ -1380,9 +1310,9 @@ ENET_TRD0_P
 Text GLabel 1275 10050 0    50   Input ~ 0
 ENET_TRD0_N
 Text GLabel 6450 1350 0    50   Input ~ 0
-UART1_TX
+UART2_TX
 Text GLabel 6450 1450 0    50   Input ~ 0
-UART1_RX
+UART2_RX
 Text GLabel 1350 10650 0    50   Input ~ 0
 VSYNC_CAM1_1
 Text GLabel 1350 10750 0    50   Input ~ 0
@@ -1680,4 +1610,48 @@ F 5 "Wurth Electronic" H 14675 3150 60  0001 L CNN "Manufacturer"
 $EndComp
 Wire Wire Line
 	14675 2050 14800 2050
+Text GLabel 6825 5850 0    50   Input ~ 0
+USB2_D_N
+Text GLabel 6825 5950 0    50   Input ~ 0
+USB2_D_P
+Text GLabel 6275 2850 0    50   Input ~ 0
+I2C1_SCL
+Text GLabel 6275 2950 0    50   Input ~ 0
+I2C1_SDA
+Wire Wire Line
+	6275 2850 7275 2850
+Wire Wire Line
+	7275 2950 6275 2950
+Text GLabel 1275 10250 0    50   Input ~ 0
+CAN_RX
+Text GLabel 1275 10350 0    50   Input ~ 0
+CAN_TX
+Wire Wire Line
+	1275 10250 1875 10250
+Wire Wire Line
+	1875 10350 1275 10350
+Wire Wire Line
+	7275 1850 6450 1850
+Wire Wire Line
+	7275 1950 6450 1950
+Text GLabel 6450 1850 0    50   Input ~ 0
+UART1_TX
+Text GLabel 6450 1950 0    50   Input ~ 0
+UART1_RX
+Wire Wire Line
+	7275 3350 6450 3350
+Wire Wire Line
+	7275 3450 6450 3450
+Wire Wire Line
+	7275 3550 6450 3550
+Wire Wire Line
+	7275 3650 6450 3650
+Text GLabel 6450 3650 0    50   Input ~ 0
+SPI0_CS#
+Text GLabel 6450 3550 0    50   Input ~ 0
+SPI0_MOSI
+Text GLabel 6450 3450 0    50   Input ~ 0
+SPI0_MISO
+Text GLabel 6450 3350 0    50   Input ~ 0
+SPI0_SCK
 $EndSCHEMATC

@@ -23,8 +23,6 @@ Text Label 12350 6925 0    60   ~ 0
 DBG_USB_D_P
 Text Notes 12350 5800 0    59   ~ 12
 Debug USB connector
-Text Label 14500 7300 1    70   ~ 0
-47346-0001
 Text Label 9280 8911 0    70   ~ 0
 FT232RQ
 Text Label 7225 9425 0    60   ~ 0
@@ -240,12 +238,12 @@ $EndComp
 $Comp
 L jetson-nano-baseboard:GND #SHIELD01
 U 1 1 5E71036B
-P 14100 7525
-F 0 "#SHIELD01" H 14100 7665 20  0001 C CNN
-F 1 "SHIELD" H 14100 7635 30  0000 C CNN
-F 2 "" H 14100 7525 70  0001 C CNN
-F 3 "" H 14100 7525 70  0001 C CNN
-	1    14100 7525
+P 15825 8400
+F 0 "#SHIELD01" H 15825 8540 20  0001 C CNN
+F 1 "SHIELD" H 15825 8510 30  0000 C CNN
+F 2 "" H 15825 8400 70  0001 C CNN
+F 3 "" H 15825 8400 70  0001 C CNN
+	1    15825 8400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -794,20 +792,6 @@ Wire Wire Line
 	2775 5650 2075 5650
 Wire Wire Line
 	7675 6050 8025 6050
-$Comp
-L jetson-nano-baseboard:Micro_USB_B J5
-U 1 1 5E710320
-P 8775 6250
-F 0 "J5" H 9055 6188 60  0000 L CNN
-F 1 "~" H 8775 6250 50  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:CON-Molex-047346-0001" H 8775 6250 50  0001 C CNN
-F 3 "" H 8775 6250 50  0001 C CNN
-F 4 "Molex" V 675 -1843 60  0001 C CNN "Manufacturer"
-F 5 "47346-0001" V 675 -1843 60  0001 C CNN "PartSymbol"
-F 6 "473460001" H -31596 -13355 50  0001 C CNN "MPN"
-	1    8775 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8275 6150 7925 6150
 Wire Wire Line
@@ -869,20 +853,6 @@ Wire Wire Line
 Connection ~ 5375 9375
 Wire Wire Line
 	5375 8975 5775 8975
-$Comp
-L jetson-nano-baseboard:Micro_USB_B J9
-U 1 1 5E710332
-P 14100 7025
-F 0 "J9" H 14325 6700 60  0000 R TNN
-F 1 "~" H 14100 7025 50  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:CON-Molex-047346-0001" H 14100 7025 50  0001 C CNN
-F 3 "" H 14100 7025 50  0001 C CNN
-F 4 "Molex" V 900 6732 60  0001 C CNN "Manufacturer"
-F 5 "47346-0001" V 900 6732 60  0001 C CNN "PartSymbol"
-F 6 "473460001" H -24860 -20787 50  0001 C CNN "MPN"
-	1    14100 7025
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13600 7125 13600 7525
 Wire Wire Line
@@ -1094,9 +1064,9 @@ USBSS_RX6_P
 Text GLabel 1750 3800 0    50   Input ~ 0
 USBSS_RX6_N
 Text GLabel 11675 9025 2    50   Input ~ 0
-UART1_RX
+UART2_RX
 Text GLabel 11675 9125 2    50   Input ~ 0
-UART1_TX
+UART2_TX
 $Comp
 L jetson-nano-baseboard:R_0R_0402 R103
 U 1 1 621EBCA1
@@ -2242,6 +2212,32 @@ F 3 "" H 13700 9100 50  0001 C CNN
 F 4 "TPS7A0518PDBVT" H 13700 9415 50  0000 C CNN "MPN"
 F 5 "Texas Instruments" H 13700 9324 50  0000 C CNN "Manufacturer"
 	1    13700 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L jetson-nano-baseboard:WE_632723300011 J5
+U 1 1 6283AAB4
+P 9550 5675
+F 0 "J5" H 9554 5830 60  0000 L BNN
+F 1 "632723300011" H 9554 5705 60  0000 L BNN
+F 2 "jetson-nano-baseboard-footprints:WE_632723300011" H 9550 5675 60  0001 C CNN
+F 3 "" H 9550 5675 60  0001 C CNN
+F 4 "Wurth Elektronik" V -1150 1082 60  0001 C CNN "Manufacturer"
+F 5 "632723300011" H -33421 -10430 50  0001 C CNN "MPN"
+	1    9550 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L jetson-nano-baseboard:WE_632723300011 J9
+U 1 1 6285123F
+P 14675 6300
+F 0 "J9" H 14679 6455 60  0000 L BNN
+F 1 "632723300011" H 14679 6330 60  0000 L BNN
+F 2 "jetson-nano-baseboard-footprints:WE_632723300011" H 14675 6300 60  0001 C CNN
+F 3 "" H 14675 6300 60  0001 C CNN
+F 4 "Wurth Elektronik" V 3975 1707 60  0001 C CNN "Manufacturer"
+F 5 "632723300011" H -28296 -9805 50  0001 C CNN "MPN"
+	1    14675 6300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

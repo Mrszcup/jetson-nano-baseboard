@@ -37,8 +37,6 @@ Text Label 6575 7900 0    60   ~ 0
 C_PCIE0_TX3_N
 Text Label 6575 7800 0    60   ~ 0
 C_PCIE0_TX3_P
-Text GLabel 11225 6400 0    50   Input ~ 0
-3V3_SYS
 Text GLabel 3175 4750 1    50   Input ~ 0
 3V3_SYS
 Text GLabel 3600 4750 1    50   Input ~ 0
@@ -55,23 +53,8 @@ Text Label 6575 6000 0    60   ~ 0
 C_PCIE0_TX0_P
 Text Label 6575 6100 0    60   ~ 0
 C_PCIE0_TX0_N
-Text GLabel 12675 7350 2    50   Input ~ 0
-EGND
-Text GLabel 13425 6800 2    50   Input ~ 0
-EGND
 Text Notes 675  900  0    118  ~ 24
 Interfaces
-$Comp
-L jetson-nano-baseboard:GND #GND_037
-U 1 1 5E710452
-P 12250 7475
-F 0 "#GND_037" H 12250 7475 20  0001 C CNN
-F 1 "GND" H 12242 7335 30  0000 C CNN
-F 2 "" H 12250 7475 70  0001 C CNN
-F 3 "" H 12250 7475 70  0001 C CNN
-	1    12250 7475
-	1    0    0    -1  
-$EndComp
 $Comp
 L jetson-nano-baseboard:GND #GND_038
 U 1 1 5E71044D
@@ -154,17 +137,6 @@ F 4 "N/A" H -31358 940 50  0001 C CNN "MPN"
 F 5 "N/A" H -31358 940 50  0001 C CNN "Manufacturer"
 	1    4225 6500
 	0    -1   -1   0   
-$EndComp
-$Comp
-L jetson-nano-baseboard:GND #GND_036
-U 1 1 5E710455
-P 11600 7300
-F 0 "#GND_036" H 11600 7300 20  0001 C CNN
-F 1 "GND" H 11592 7160 30  0000 C CNN
-F 2 "" H 11600 7300 70  0001 C CNN
-F 3 "" H 11600 7300 70  0001 C CNN
-	1    11600 7300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6275 7800 7300 7800
@@ -383,37 +355,6 @@ Wire Wire Line
 Wire Wire Line
 	8775 8925 9225 8925
 Connection ~ 8775 8925
-Wire Wire Line
-	11825 5500 11325 5500
-Wire Wire Line
-	11825 5600 11325 5600
-Wire Wire Line
-	11325 5700 11825 5700
-Wire Wire Line
-	11325 5800 11825 5800
-Wire Wire Line
-	11325 5900 11825 5900
-Wire Wire Line
-	11325 6000 11825 6000
-Wire Wire Line
-	11325 6100 11825 6100
-Wire Wire Line
-	11325 6200 11825 6200
-Wire Wire Line
-	13225 6400 13825 6400
-Wire Wire Line
-	13225 5300 13825 5300
-Wire Wire Line
-	13225 6800 13425 6800
-Wire Wire Line
-	11825 6700 11600 6700
-Wire Wire Line
-	11600 6700 11600 6800
-Wire Wire Line
-	11825 6800 11600 6800
-Connection ~ 11600 6800
-Wire Wire Line
-	12250 7350 12250 7475
 Text GLabel 2675 6300 0    50   Input ~ 0
 M2_ALERT
 Text GLabel 2675 6000 0    50   Input ~ 0
@@ -458,26 +399,6 @@ Text GLabel 8350 5800 2    50   Input ~ 0
 PCIE0_CLK_N
 Text GLabel 8350 5700 2    50   Input ~ 0
 PCIE0_CLK_P
-Text GLabel 11325 5500 0    50   Input ~ 0
-ENET_TRD0_N
-Text GLabel 11325 5600 0    50   Input ~ 0
-ENET_TRD0_P
-Text GLabel 11325 5700 0    50   Input ~ 0
-ENET_TRD1_N
-Text GLabel 11325 5800 0    50   Input ~ 0
-ENET_TRD1_P
-Text GLabel 11325 5900 0    50   Input ~ 0
-ENET_TRD2_N
-Text GLabel 11325 6000 0    50   Input ~ 0
-ENET_TRD2_P
-Text GLabel 11325 6100 0    50   Input ~ 0
-ENET_TRD3_N
-Text GLabel 11325 6200 0    50   Input ~ 0
-ENET_TRD3_P
-Text GLabel 13825 5300 2    50   Input ~ 0
-ENET_LED1
-Text GLabel 13825 6400 2    50   Input ~ 0
-ENET_LED0
 $Comp
 L jetson-nano-baseboard:R_10k_0402 R115
 U 1 1 62B5FE4B
@@ -586,62 +507,6 @@ Wire Wire Line
 	8775 9375 8775 9450
 Wire Wire Line
 	9225 9375 9225 9450
-$Comp
-L jetson-nano-baseboard:R_220R_0402 R40
-U 1 1 62BCA909
-P 11525 6400
-F 0 "R40" H 11525 6325 60  0000 C CNN
-F 1 "R_220R_0402" H 11525 6250 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:0402-res" H 11725 6600 60  0001 L CNN
-F 3 "" H 11525 6400 50  0001 C CNN
-F 4 "Panasonic" H 11725 6800 60  0001 L CNN "Manufacturer"
-F 5 "ERJ2GEJ221X" H 11725 6700 60  0001 L CNN "MPN"
-F 6 "220R" H 11525 6500 50  0000 C CNN "Val"
-	1    11525 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11375 6400 11225 6400
-Wire Wire Line
-	11825 6400 11675 6400
-Wire Wire Line
-	11825 5300 11675 5300
-$Comp
-L jetson-nano-baseboard:C_100p_0402 C14
-U 1 1 62BE91A7
-P 12450 7350
-F 0 "C14" V 12192 7350 60  0000 C CNN
-F 1 "C_100p_0402" H 12450 7200 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:0402-cap" H 12650 7550 60  0001 L CNN
-F 3 "" H 12450 7350 50  0001 C CNN
-F 4 "WALSIN" H 12650 7750 60  0001 L CNN "Manufacturer"
-F 5 "0402N101J500CT" H 12650 7650 60  0001 L CNN "MPN"
-F 6 "100p" V 12290 7350 50  0000 C CNN "Val"
-	1    12450 7350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12600 7350 12675 7350
-Wire Wire Line
-	12300 7350 12250 7350
-$Comp
-L jetson-nano-baseboard:C_10n_0402 C13
-U 1 1 62BF5934
-P 11600 7125
-F 0 "C13" H 11715 7170 60  0000 L CNN
-F 1 "C_10n_0402" H 11600 6975 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:0402-cap" H 11800 7325 60  0001 L CNN
-F 3 "" H 11600 7125 50  0001 C CNN
-F 4 "AVX" H 11800 7525 60  0001 L CNN "Manufacturer"
-F 5 "04025G103ZAT2A" H 11800 7425 60  0001 L CNN "MPN"
-F 6 "10n" H 11715 7072 50  0000 L CNN "Val"
-	1    11600 7125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11600 6800 11600 6975
-Wire Wire Line
-	11600 7275 11600 7300
 Wire Wire Line
 	6275 6900 8350 6900
 Wire Wire Line
@@ -774,24 +639,6 @@ Wire Wire Line
 	7600 7200 8375 7200
 Wire Wire Line
 	7600 7800 8400 7800
-Wire Wire Line
-	11375 5300 11225 5300
-$Comp
-L jetson-nano-baseboard:R_220R_0402 R38
-U 1 1 62BC9C4E
-P 11525 5300
-F 0 "R38" H 11525 5400 60  0000 C CNN
-F 1 "R_220R_0402" H 11525 5150 60  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:0402-res" H 11725 5500 60  0001 L CNN
-F 3 "" H 11525 5300 50  0001 C CNN
-F 4 "Panasonic" H 11725 5700 60  0001 L CNN "Manufacturer"
-F 5 "ERJ2GEJ221X" H 11725 5600 60  0001 L CNN "MPN"
-F 6 "220R" H 11525 5200 50  0000 C CNN "Val"
-	1    11525 5300
-	-1   0    0    1   
-$EndComp
-Text GLabel 11225 5300 0    50   Input ~ 0
-3V3_SYS
 $Comp
 L antmicroPciConnectors:1-2199230-6 J8
 U 1 1 6246454E
@@ -819,16 +666,454 @@ F 5 "9774025151" H 5500 9300 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L antmicroModularConnectorsJacksWithMagnetics:SI-51005-F J3
-U 1 1 61D7A49A
-P 12525 6200
-F 0 "J3" H 12525 7489 60  0000 C CNN
-F 1 "SI-51005-F" H 12525 7383 60  0000 C CNN
-F 2 "antmicro-footprints:SI-51005-F" H 12525 5250 60  0001 C CNN
-F 3 "https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-si-51005-fb.pdf" H 12525 6200 60  0001 C CNN
-F 4 "Bel Magnetic Solutions " H 12525 6200 50  0001 C CNN "Manufacturer"
-F 5 "SI-51005-F " H 12525 6200 50  0001 C CNN "MPN"
-	1    12525 6200
+L antmicroRectangularConnectorsHeadersMalePins:DF17(4.0)-50DS-0.5V(57) J2
+U 1 1 6211ADC9
+P 10400 2275
+F 0 "J2" H 10400 3742 50  0000 C CNN
+F 1 "DF17(4.0)-50DS-0.5V(57)" H 10400 3651 50  0000 C CNN
+F 2 "antmicro-footprints:HRS_DF17(4.0)-50DS-0.5V(57)" H 10400 675 50  0001 C CNN
+F 3 "https://www.hirose.com/product/p/CL0683-0045-5-57" H 10500 1075 50  0001 L BNN
+F 4 "HRS" H 10400 775 50  0001 C CNN "Manufacturer"
+F 5 "DF17(4.0)-50DS-0.5V(57)" H 10400 575 50  0001 C CNN "MPN"
+	1    10400 2275
+	1    0    0    -1  
+$EndComp
+Text GLabel 11050 1475 2    50   Input ~ 0
+PCIE1_TX0_P
+Text GLabel 11050 1575 2    50   Input ~ 0
+PCIE1_TX0_N
+Text GLabel 11050 1775 2    50   Input ~ 0
+PCIE1_RX0_P
+Text GLabel 11050 1875 2    50   Input ~ 0
+PCIE1_RX0_N
+Text GLabel 11050 2375 2    50   Input ~ 0
+PCIE1_RST
+Text GLabel 11050 2475 2    50   Input ~ 0
+PCIE1_CLKREQ
+Text GLabel 11050 2075 2    50   Input ~ 0
+PCIE1_CLK_P
+Text GLabel 11050 2175 2    50   Input ~ 0
+PCIE1_CLK_N
+Text GLabel 11050 2775 2    50   Input ~ 0
+USB2_D_N
+Text GLabel 11050 2675 2    50   Input ~ 0
+USB2_D_P
+Text GLabel 11050 3475 2    50   Input ~ 0
+UART1_TX
+Text GLabel 11050 3375 2    50   Input ~ 0
+UART1_RX
+Text GLabel 11050 3275 2    50   Input ~ 0
+SPI0_CS#
+Text GLabel 11050 3175 2    50   Input ~ 0
+SPI0_MOSI
+Text GLabel 11050 3075 2    50   Input ~ 0
+SPI0_MISO
+Text GLabel 11050 2975 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	11050 3175 10800 3175
+Wire Wire Line
+	11050 3275 10800 3275
+Wire Wire Line
+	11050 3375 10800 3375
+Wire Wire Line
+	11050 3475 10800 3475
+Wire Wire Line
+	11050 2975 10800 2975
+Wire Wire Line
+	11050 3075 10800 3075
+Wire Wire Line
+	11050 2675 10800 2675
+Wire Wire Line
+	11050 2775 10800 2775
+Wire Wire Line
+	11050 1475 10800 1475
+Wire Wire Line
+	11050 1575 10800 1575
+Wire Wire Line
+	11050 1775 10800 1775
+Wire Wire Line
+	11050 1875 10800 1875
+Wire Wire Line
+	11050 2075 10800 2075
+Wire Wire Line
+	11050 2175 10800 2175
+Wire Wire Line
+	11050 2375 10800 2375
+Wire Wire Line
+	11050 2475 10800 2475
+$Comp
+L jetson-nano-baseboard:GND #GND_0113
+U 1 1 625AA8D9
+P 9925 3625
+F 0 "#GND_0113" H 9925 3625 20  0001 C CNN
+F 1 "GND" H 9940 3475 30  0000 C CNN
+F 2 "" H 9925 3625 70  0001 C CNN
+F 3 "" H 9925 3625 70  0001 C CNN
+	1    9925 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1375 9925 1375
+Wire Wire Line
+	9925 1375 9925 1675
+Wire Wire Line
+	10000 1675 9925 1675
+Wire Wire Line
+	10000 1975 9925 1975
+Wire Wire Line
+	10000 2275 9925 2275
+Wire Wire Line
+	10000 2575 9925 2575
+Wire Wire Line
+	10000 2875 9925 2875
+Connection ~ 9925 1675
+Wire Wire Line
+	9925 1675 9925 1975
+Connection ~ 9925 1975
+Wire Wire Line
+	9925 1975 9925 2275
+Connection ~ 9925 2275
+Wire Wire Line
+	9925 2275 9925 2575
+Connection ~ 9925 2575
+Wire Wire Line
+	9925 2575 9925 2875
+Connection ~ 9925 2875
+Wire Wire Line
+	9925 2875 9925 3075
+Wire Wire Line
+	10000 3475 9750 3475
+Wire Wire Line
+	10000 3375 9750 3375
+Wire Wire Line
+	10000 3275 9750 3275
+Wire Wire Line
+	10000 3175 9750 3175
+Wire Wire Line
+	10000 2975 9750 2975
+Wire Wire Line
+	10000 2775 9750 2775
+Wire Wire Line
+	10000 2675 9750 2675
+Wire Wire Line
+	10000 2475 9750 2475
+Wire Wire Line
+	10000 2375 9750 2375
+Wire Wire Line
+	10000 2175 9750 2175
+Wire Wire Line
+	10000 2075 9750 2075
+Wire Wire Line
+	10000 1875 9750 1875
+Wire Wire Line
+	10000 1775 9750 1775
+Wire Wire Line
+	10000 1575 9750 1575
+Wire Wire Line
+	10000 1475 9750 1475
+Text GLabel 9750 3275 0    50   Input ~ 0
+CAN_TX
+Text GLabel 9750 3175 0    50   Input ~ 0
+CAN_RX
+Text GLabel 9750 3475 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 9750 3375 0    50   Input ~ 0
+I2C1_SCL
+Text GLabel 9750 2675 0    50   Input ~ 0
+EDP_AUX_N
+Text GLabel 9750 2775 0    50   Input ~ 0
+EDP_AUX_P
+Text GLabel 9750 2975 0    50   Input ~ 0
+DP_HDP
+Text GLabel 9750 2475 0    50   Input ~ 0
+EDP0_TX_P
+Text GLabel 9750 2375 0    50   Input ~ 0
+EDP0_TX_N
+Text GLabel 9750 2175 0    50   Input ~ 0
+EDP1_TX_P
+Text GLabel 9750 2075 0    50   Input ~ 0
+EDP1_TX_N
+Text GLabel 9750 1875 0    50   Input ~ 0
+EDP2_TX_P
+Text GLabel 9750 1775 0    50   Input ~ 0
+EDP2_TX_N
+Text GLabel 9750 1575 0    50   Input ~ 0
+EDP3_TX_P
+Text GLabel 9750 1475 0    50   Input ~ 0
+EDP3_TX_N
+$Comp
+L jetson-nano-baseboard:GND #GND_0122
+U 1 1 625FDF7A
+P 10875 3625
+F 0 "#GND_0122" H 10875 3625 20  0001 C CNN
+F 1 "GND" H 10890 3475 30  0000 C CNN
+F 2 "" H 10875 3625 70  0001 C CNN
+F 3 "" H 10875 3625 70  0001 C CNN
+	1    10875 3625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 1375 10875 1375
+Wire Wire Line
+	10875 1375 10875 1675
+Wire Wire Line
+	10800 1675 10875 1675
+Wire Wire Line
+	10800 1975 10875 1975
+Wire Wire Line
+	10800 2275 10875 2275
+Wire Wire Line
+	10800 2575 10875 2575
+Wire Wire Line
+	10800 2875 10875 2875
+Connection ~ 10875 1675
+Wire Wire Line
+	10875 1675 10875 1975
+Connection ~ 10875 1975
+Wire Wire Line
+	10875 1975 10875 2275
+Connection ~ 10875 2275
+Wire Wire Line
+	10875 2275 10875 2575
+Connection ~ 10875 2575
+Wire Wire Line
+	10875 2575 10875 2875
+Connection ~ 10875 2875
+Wire Wire Line
+	10875 2875 10875 3625
+Text GLabel 11050 1075 2    50   Input ~ 0
+3V3_SYS
+Wire Wire Line
+	11050 1075 10875 1075
+Wire Wire Line
+	10875 1075 10875 1175
+Wire Wire Line
+	10875 1275 10800 1275
+Wire Wire Line
+	10800 1075 10875 1075
+Connection ~ 10875 1075
+Wire Wire Line
+	10800 1175 10875 1175
+Connection ~ 10875 1175
+Wire Wire Line
+	10875 1175 10875 1275
+Wire Wire Line
+	9750 1075 9925 1075
+Wire Wire Line
+	9925 1075 9925 1175
+Wire Wire Line
+	9925 1275 10000 1275
+Wire Wire Line
+	10000 1075 9925 1075
+Connection ~ 9925 1075
+Wire Wire Line
+	10000 1175 9925 1175
+Connection ~ 9925 1175
+Wire Wire Line
+	9925 1175 9925 1275
+Wire Wire Line
+	10000 3075 9925 3075
+Connection ~ 9925 3075
+Wire Wire Line
+	9925 3075 9925 3625
+Text GLabel 9750 1075 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	12300 7350 12250 7350
+Wire Wire Line
+	12600 7350 12675 7350
+$Comp
+L jetson-nano-baseboard:C_100p_0402 C14
+U 1 1 62BE91A7
+P 12450 7350
+F 0 "C14" V 12192 7350 60  0000 C CNN
+F 1 "C_100p_0402" H 12450 7200 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:0402-cap" H 12650 7550 60  0001 L CNN
+F 3 "" H 12450 7350 50  0001 C CNN
+F 4 "WALSIN" H 12650 7750 60  0001 L CNN "Manufacturer"
+F 5 "0402N101J500CT" H 12650 7650 60  0001 L CNN "MPN"
+F 6 "100p" V 12290 7350 50  0000 C CNN "Val"
+	1    12450 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12250 7350 12250 7475
+$Comp
+L jetson-nano-baseboard:GND #GND_037
+U 1 1 5E710452
+P 12250 7475
+F 0 "#GND_037" H 12250 7475 20  0001 C CNN
+F 1 "GND" H 12242 7335 30  0000 C CNN
+F 2 "" H 12250 7475 70  0001 C CNN
+F 3 "" H 12250 7475 70  0001 C CNN
+	1    12250 7475
+	1    0    0    -1  
+$EndComp
+Text GLabel 12675 7350 2    50   Input ~ 0
+EGND
+Wire Wire Line
+	13225 6800 13425 6800
+Text GLabel 13425 6800 2    50   Input ~ 0
+EGND
+Wire Wire Line
+	11600 7275 11600 7300
+Wire Wire Line
+	11600 6800 11600 6975
+$Comp
+L jetson-nano-baseboard:C_10n_0402 C13
+U 1 1 62BF5934
+P 11600 7125
+F 0 "C13" H 11715 7170 60  0000 L CNN
+F 1 "C_10n_0402" H 11600 6975 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:0402-cap" H 11800 7325 60  0001 L CNN
+F 3 "" H 11600 7125 50  0001 C CNN
+F 4 "AVX" H 11800 7525 60  0001 L CNN "Manufacturer"
+F 5 "04025G103ZAT2A" H 11800 7425 60  0001 L CNN "MPN"
+F 6 "10n" H 11715 7072 50  0000 L CNN "Val"
+	1    11600 7125
+	1    0    0    -1  
+$EndComp
+Connection ~ 11600 6800
+Wire Wire Line
+	11825 6800 11600 6800
+Wire Wire Line
+	11600 6700 11600 6800
+Wire Wire Line
+	11825 6700 11600 6700
+$Comp
+L jetson-nano-baseboard:GND #GND_036
+U 1 1 5E710455
+P 11600 7300
+F 0 "#GND_036" H 11600 7300 20  0001 C CNN
+F 1 "GND" H 11592 7160 30  0000 C CNN
+F 2 "" H 11600 7300 70  0001 C CNN
+F 3 "" H 11600 7300 70  0001 C CNN
+	1    11600 7300
+	1    0    0    -1  
+$EndComp
+Text GLabel 11325 6200 0    50   Input ~ 0
+ENET_TRD3_P
+Text GLabel 11325 6100 0    50   Input ~ 0
+ENET_TRD3_N
+Text GLabel 11325 6000 0    50   Input ~ 0
+ENET_TRD2_P
+Text GLabel 11325 5900 0    50   Input ~ 0
+ENET_TRD2_N
+Text GLabel 11325 5800 0    50   Input ~ 0
+ENET_TRD1_P
+Text GLabel 11325 5700 0    50   Input ~ 0
+ENET_TRD1_N
+Text GLabel 11325 5600 0    50   Input ~ 0
+ENET_TRD0_P
+Text GLabel 11325 5500 0    50   Input ~ 0
+ENET_TRD0_N
+Wire Wire Line
+	11325 6200 11825 6200
+Wire Wire Line
+	11325 6100 11825 6100
+Wire Wire Line
+	11325 6000 11825 6000
+Wire Wire Line
+	11325 5900 11825 5900
+Wire Wire Line
+	11325 5800 11825 5800
+Wire Wire Line
+	11325 5700 11825 5700
+Wire Wire Line
+	11825 5600 11325 5600
+Wire Wire Line
+	11825 5500 11325 5500
+Wire Wire Line
+	11825 6400 11675 6400
+Wire Wire Line
+	11375 6400 11225 6400
+$Comp
+L jetson-nano-baseboard:R_220R_0402 R40
+U 1 1 62BCA909
+P 11525 6400
+F 0 "R40" H 11525 6325 60  0000 C CNN
+F 1 "R_220R_0402" H 11525 6250 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:0402-res" H 11725 6600 60  0001 L CNN
+F 3 "" H 11525 6400 50  0001 C CNN
+F 4 "Panasonic" H 11725 6800 60  0001 L CNN "Manufacturer"
+F 5 "ERJ2GEJ221X" H 11725 6700 60  0001 L CNN "MPN"
+F 6 "220R" H 11525 6500 50  0000 C CNN "Val"
+	1    11525 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 11225 6400 0    50   Input ~ 0
+3V3_SYS
+Text GLabel 11225 5300 0    50   Input ~ 0
+3V3_SYS
+$Comp
+L jetson-nano-baseboard:R_220R_0402 R38
+U 1 1 62BC9C4E
+P 11525 5300
+F 0 "R38" H 11525 5400 60  0000 C CNN
+F 1 "R_220R_0402" H 11525 5150 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:0402-res" H 11725 5500 60  0001 L CNN
+F 3 "" H 11525 5300 50  0001 C CNN
+F 4 "Panasonic" H 11725 5700 60  0001 L CNN "Manufacturer"
+F 5 "ERJ2GEJ221X" H 11725 5600 60  0001 L CNN "MPN"
+F 6 "220R" H 11525 5200 50  0000 C CNN "Val"
+	1    11525 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11375 5300 11225 5300
+Wire Wire Line
+	11825 5300 11675 5300
+Text GLabel 13825 6400 2    50   Input ~ 0
+ENET_LED0
+Text GLabel 13825 5300 2    50   Input ~ 0
+ENET_LED1
+Wire Wire Line
+	13225 5300 13825 5300
+Wire Wire Line
+	13225 6400 13825 6400
+$Comp
+L antmicroModularConnectorsJacksWithMagnetics:5-2337992-8 J10
+U 1 1 628CFF58
+P 13150 2275
+F 0 "J10" H 15150 2696 60  0000 C CNN
+F 1 "5-2337992-8" H 15150 2590 60  0000 C CNN
+F 2 "antmicro-footprints:5-2337992-8" H 15150 225 60  0001 C CNN
+F 3 "" H 14600 2125 60  0000 C CNN
+F 4 "5-2337992-8" H 15150 2492 50  0000 C CNN "MPN"
+F 5 "TE Connectivity" H 15150 2401 50  0000 C CNN "Manufacturer"
+	1    13150 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L antmicroModularConnectorsJacksWithMagnetics:WE-RJ45_7499511611A T8
+U 1 1 62931A77
+P 17900 3200
+F 0 "T8" H 17950 4317 50  0000 C CNN
+F 1 "WE-RJ45_7499511611A" H 17950 4226 50  0000 C CNN
+F 2 "antmicro-footprints:7499511611A" H 17900 3200 50  0001 L BNN
+F 3 "" H 17900 3200 50  0001 L BNN
+F 4 "7499511611A" H 17900 3200 50  0001 L BNN "VALUE"
+F 5 "green/orange-yellow" H 17900 3200 50  0001 L BNN "LED"
+F 6 "1" H 17900 3200 50  0001 L BNN "PORTS"
+F 7 "PoE+ (up to 600 mA)" H 17900 3200 50  0001 L BNN "POE"
+F 8 "https://www.we-online.com/catalog/datasheet/7499511611A.pdf" H 17900 3200 50  0001 L BNN "DATASHEET-URL"
+F 9 "7499511611A" H 17900 3200 50  0001 L BNN "MPN"
+F 10 "WURTH ELEKTRONIK" H 17900 3200 50  0001 L BNN "Manufacturer"
+	1    17900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L antmicroModularConnectorsJacksWithMagnetics:L834-1G1T-S7 J3
+U 1 1 62934D46
+P 20200 2900
+F 0 "J3" H 20530 2946 50  0000 L CNN
+F 1 "L834-1G1T-S7" H 20530 2855 50  0000 L CNN
+F 2 "antmicro-footprints:BEL_L834-1G1T-S7" H 20200 2900 50  0001 L BNN
+F 3 "" H 20200 2900 50  0001 L BNN
+F 4 "L834-1G1T-S7" H 20200 2900 50  0001 L BNN "MPN"
+F 5 "Bel Magnetic Solutions" H 20200 2900 50  0001 L BNN "Manufacturer"
+	1    20200 2900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
