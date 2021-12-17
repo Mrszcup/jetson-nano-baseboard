@@ -882,7 +882,7 @@ Wire Wire Line
 Connection ~ 10875 2875
 Wire Wire Line
 	10875 2875 10875 3625
-Text GLabel 11050 1075 2    50   Input ~ 0
+Text GLabel 9750 1075 0    50   Input ~ 0
 3V3_SYS
 Wire Wire Line
 	11050 1075 10875 1075
@@ -917,7 +917,7 @@ Wire Wire Line
 Connection ~ 9925 3075
 Wire Wire Line
 	9925 3075 9925 3625
-Text GLabel 9750 1075 0    50   Input ~ 0
+Text GLabel 11050 1075 2    50   Input ~ 0
 VIN
 Wire Wire Line
 	12300 7350 12250 7350
