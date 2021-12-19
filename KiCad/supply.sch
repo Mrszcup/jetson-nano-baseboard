@@ -1697,12 +1697,12 @@ Wire Wire Line
 	9425 9025 9425 9075
 Connection ~ 9225 9025
 $Comp
-L antmicroFerriteBeadsandChips:74279221100 FB2
+L jetson-nano-baseboard:74279221100 FB2
 U 1 1 624FA3DC
 P 1250 2100
 F 0 "FB2" H 1250 2387 60  0000 C CNN
 F 1 "74279221100" H 1250 2281 60  0000 C CNN
-F 2 "antmicro-footprints:1206-res" H 1450 2300 60  0001 L CNN
+F 2 "jetson-nano-baseboard-footprints:1206-res" H 1450 2300 60  0001 L CNN
 F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 1450 2400 60  0001 L CNN
 F 4 "74279221100" H 1450 2600 60  0001 L CNN "MPN"
 F 5 "Wurth Electronic" H 1450 3200 60  0001 L CNN "Manufacturer"
@@ -1710,12 +1710,12 @@ F 5 "Wurth Electronic" H 1450 3200 60  0001 L CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L antmicroFerriteBeadsandChips:74279221100 FB1
+L jetson-nano-baseboard:74279221100 FB1
 U 1 1 6250F269
 P 1225 5250
 F 0 "FB1" H 1225 5537 60  0000 C CNN
 F 1 "74279221100" H 1225 5431 60  0000 C CNN
-F 2 "antmicro-footprints:1206-res" H 1425 5450 60  0001 L CNN
+F 2 "jetson-nano-baseboard-footprints:1206-res" H 1425 5450 60  0001 L CNN
 F 3 "https://www.we-online.com/catalog/datasheet/74279221100.pdf" H 1425 5550 60  0001 L CNN
 F 4 "74279221100" H 1425 5750 60  0001 L CNN "MPN"
 F 5 "Wurth Electronic" H 1425 6350 60  0001 L CNN "Manufacturer"

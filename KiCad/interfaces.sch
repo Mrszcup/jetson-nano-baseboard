@@ -640,12 +640,12 @@ Wire Wire Line
 Wire Wire Line
 	7600 7800 8400 7800
 $Comp
-L antmicroPciConnectors:1-2199230-6 J8
+L jetson-nano-baseboard:1-2199230-6 J8
 U 1 1 6246454E
 P 5475 7150
 F 0 "J8" H 5475 9815 60  0000 C CNN
 F 1 "1-2199230-6" H 5325 5450 60  0001 C CNN
-F 2 "antmicro-footprints:1-2199230-6" H 5325 5450 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:1-2199230-6" H 5325 5450 60  0001 C CNN
 F 3 "" H 5325 7150 60  0001 C CNN
 F 4 "TE" H 5475 9717 50  0000 C CNN "Manufacturer"
 F 5 "1-2199230-6" H 5475 9626 50  0000 C CNN "MPN"
@@ -653,12 +653,12 @@ F 5 "1-2199230-6" H 5475 9626 50  0000 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L antmicroMechanicalParts:9774025151 SP7
+L jetson-nano-baseboard:9774025151 SP7
 U 1 1 6248F20F
 P 5500 9300
 F 0 "SP7" H 5443 9011 60  0000 C CNN
 F 1 "9774025151" H 5443 9117 60  0000 C CNN
-F 2 "antmicro-footprints:9774025151" H 5500 9300 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:9774025151" H 5500 9300 60  0001 C CNN
 F 3 "" H 5500 9300 60  0001 C CNN
 F 4 "Wurth Elektronik" H 5500 9300 50  0001 C CNN "Manufacturer"
 F 5 "9774025151" H 5500 9300 50  0001 C CNN "MPN"
@@ -666,12 +666,12 @@ F 5 "9774025151" H 5500 9300 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L antmicroRectangularConnectorsHeadersMalePins:DF17(4.0)-50DS-0.5V(57) J2
+L jetson-nano-baseboard:DF17(4.0)-50DS-0.5V(57) J2
 U 1 1 6211ADC9
 P 10400 2275
 F 0 "J2" H 10400 3742 50  0000 C CNN
 F 1 "DF17(4.0)-50DS-0.5V(57)" H 10400 3651 50  0000 C CNN
-F 2 "antmicro-footprints:HRS_DF17(4.0)-50DS-0.5V(57)" H 10400 675 50  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:HRS_DF17(4.0)-50DS-0.5V(57)" H 10400 675 50  0001 C CNN
 F 3 "https://www.hirose.com/product/p/CL0683-0045-5-57" H 10500 1075 50  0001 L BNN
 F 4 "HRS" H 10400 775 50  0001 C CNN "Manufacturer"
 F 5 "DF17(4.0)-50DS-0.5V(57)" H 10400 575 50  0001 C CNN "MPN"
@@ -1073,12 +1073,12 @@ Wire Wire Line
 Wire Wire Line
 	13225 6400 13825 6400
 $Comp
-L antmicroModularConnectorsJacksWithMagnetics:5-2337992-8 J10
+L jetson-nano-baseboard:5-2337992-8 J10
 U 1 1 628CFF58
 P 13325 4975
 F 0 "J10" H 15325 5396 60  0000 C CNN
 F 1 "5-2337992-8" H 15325 5290 60  0000 C CNN
-F 2 "antmicro-footprints:5-2337992-8" H 15325 2925 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:5-2337992-8" H 15325 2925 60  0001 C CNN
 F 3 "" H 14775 4825 60  0000 C CNN
 F 4 "5-2337992-8" H 15325 5192 50  0000 C CNN "MPN"
 F 5 "TE Connectivity" H 15325 5101 50  0000 C CNN "Manufacturer"

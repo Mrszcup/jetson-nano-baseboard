@@ -1345,12 +1345,12 @@ Wire Wire Line
 	2500 4600 4025 4600
 Connection ~ 4025 4600
 $Comp
-L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U7
+L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U7
 U 1 1 61B4F31F
 P 14275 7150
 F 0 "U7" V 14301 7478 50  0000 L CNN
 F 1 "TPD4E05U06QDQARQ1" H 14325 6750 50  0001 L CNN
-F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 14325 7600 50  0001 L CNN
+F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 14325 7600 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 14275 7550 50  0001 L CNN
 F 4 "Texas Instruments" V 14650 6850 50  0000 L CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" V 14750 6850 50  0000 L CNN "MPN"
@@ -1358,12 +1358,12 @@ F 5 "TPD4E05U06QDQARQ1" V 14750 6850 50  0000 L CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L antmicroTVSDiodes:TPD4E05U06QDQARQ1 U6
+L jetson-nano-baseboard:TPD4E05U06QDQARQ1 U6
 U 1 1 61B58F0C
 P 13825 9275
 F 0 "U6" V 13900 9600 50  0000 L CNN
 F 1 "TPD4E05U06QDQARQ1" H 13875 8875 50  0001 L CNN
-F 2 "antmicro-footprints:TPD4E05U06QDQARQ1" H 13875 9725 50  0001 L CNN
+F 2 "jetson-nano-baseboard-footprints:TPD4E05U06QDQARQ1" H 13875 9725 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD4E001&fileType=pdf" H 13825 9675 50  0001 L CNN
 F 4 "Texas Instruments" V 14200 8975 50  0000 L CNN "Manufacturer"
 F 5 "TPD4E05U06QDQARQ1" V 14300 8975 50  0000 L CNN "MPN"
