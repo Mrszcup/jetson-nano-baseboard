@@ -145,8 +145,6 @@ Text Label 9775 4275 0    60   ~ 0
 C_CC1
 Text Label 9775 4375 0    60   ~ 0
 C_CC2
-Text Label 9125 5850 2    70   ~ 0
-47346-0001
 Text Notes 4600 5175 0    59   ~ 12
 USB-OTG
 Text Label 12875 4475 0    60   ~ 0
@@ -412,17 +410,6 @@ F 3 "" H 10150 4750 70  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L jetson-nano-baseboard:GND #GND_0106
-U 1 1 5E71034A
-P 8250 6750
-F 0 "#GND_0106" H 8250 6750 20  0001 C CNN
-F 1 "GND" H 8254 6605 30  0000 C CNN
-F 2 "" H 8250 6750 70  0001 C CNN
-F 3 "" H 8250 6750 70  0001 C CNN
-	1    8250 6750
-	1    0    0    -1  
-$EndComp
-$Comp
 L jetson-nano-baseboard:GND #GND_0108
 U 1 1 5E710346
 P 7325 6800
@@ -585,19 +572,6 @@ F 4 "KPT-1608SGC" H -33666 -15093 50  0001 C CNN "MPN"
 F 5 "Kingbright" H -33666 -15093 50  0001 C CNN "Manufacturer"
 	1    4350 8975
 	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:Testpad TP22
-U 1 1 5E71031E
-P 7200 6250
-F 0 "TP22" V 7150 6600 60  0000 R TNN
-F 1 "~" H 7200 6250 50  0001 C CNN
-F 2 "jetson-nano-baseboard-footprints:TP-R-1.5" H 7200 6250 50  0001 C CNN
-F 3 "" H 7200 6250 50  0001 C CNN
-F 4 "N/A" H -31721 -13355 50  0001 C CNN "MPN"
-F 5 "N/A" H -31721 -13355 50  0001 C CNN "Manufacturer"
-	1    7200 6250
-	0    -1   -1   0   
 $EndComp
 $Comp
 L jetson-nano-baseboard:Testpad TP32
@@ -793,19 +767,7 @@ Wire Wire Line
 Wire Wire Line
 	7675 6050 8025 6050
 Wire Wire Line
-	8275 6150 7925 6150
-Wire Wire Line
-	7250 6250 8275 6250
-Wire Wire Line
-	8275 6350 8250 6350
-Wire Wire Line
-	8250 6350 8250 6750
-Connection ~ 7925 6150
-Wire Wire Line
 	7925 6150 7675 6150
-Connection ~ 8025 6050
-Wire Wire Line
-	8025 6050 8275 6050
 Wire Wire Line
 	7325 6550 7325 6800
 Connection ~ 6725 5950
@@ -1543,9 +1505,6 @@ F 7 "DNP" H 8025 5650 50  0000 C CNN "DNP"
 $EndComp
 Wire Wire Line
 	8025 5900 8025 5950
-Connection ~ 8025 5950
-Wire Wire Line
-	8025 5950 8275 5950
 Wire Wire Line
 	8025 5600 8025 5550
 $Comp
@@ -2116,17 +2075,6 @@ F 5 "Murata" H -25960 -20662 50  0001 C CNN "Manufacturer"
 	1    12400 6650
 	-1   0    0    -1  
 $EndComp
-$Comp
-L jetson-nano-baseboard:GND #GND_0107
-U 1 1 622610D8
-P 8775 6750
-F 0 "#GND_0107" H 8775 6750 20  0001 C CNN
-F 1 "GND" H 8779 6605 30  0000 C CNN
-F 2 "" H 8775 6750 70  0001 C CNN
-F 3 "" H 8775 6750 70  0001 C CNN
-	1    8775 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6725 5950 6725 6600
 $Comp
@@ -2203,19 +2151,6 @@ F 3 "" H 13700 9100 50  0001 C CNN
 F 4 "TPS7A0518PDBVT" H 13700 9415 50  0000 C CNN "MPN"
 F 5 "Texas Instruments" H 13700 9324 50  0000 C CNN "Manufacturer"
 	1    13700 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L jetson-nano-baseboard:WE_632723300011 J5
-U 1 1 6283AAB4
-P 9550 5675
-F 0 "J5" H 9554 5830 60  0000 L BNN
-F 1 "632723300011" H 9554 5705 60  0000 L BNN
-F 2 "jetson-nano-baseboard-footprints:WE_632723300011" H 9550 5675 60  0001 C CNN
-F 3 "" H 9550 5675 60  0001 C CNN
-F 4 "Wurth Elektronik" V -1150 1082 60  0001 C CNN "Manufacturer"
-F 5 "632723300011" H -33421 -10430 50  0001 C CNN "MPN"
-	1    9550 5675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2314,4 +2249,126 @@ NoConn ~ 15650 7025
 NoConn ~ 15650 6700
 NoConn ~ 15650 6525
 NoConn ~ 15650 6425
+$Comp
+L jetson-nano-baseboard:GND #GND_0106
+U 1 1 61CD84AE
+P 8725 7250
+F 0 "#GND_0106" H 8725 7250 20  0001 C CNN
+F 1 "GND" H 8741 7115 30  0000 C CNN
+F 2 "" H 8725 7250 70  0001 C CNN
+F 3 "" H 8725 7250 70  0001 C CNN
+	1    8725 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 7050 8925 7050
+Wire Wire Line
+	8925 7050 8925 7250
+Wire Wire Line
+	8975 6950 8725 6950
+Wire Wire Line
+	8725 6950 8725 7250
+$Comp
+L jetson-nano-baseboard:GND #GND_0107
+U 1 1 61CD84CA
+P 10425 7250
+F 0 "#GND_0107" H 10425 7250 20  0001 C CNN
+F 1 "GND" H 10441 7115 30  0000 C CNN
+F 2 "" H 10425 7250 70  0001 C CNN
+F 3 "" H 10425 7250 70  0001 C CNN
+	1    10425 7250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10175 6950 10425 6950
+Wire Wire Line
+	10425 6950 10425 7250
+$Comp
+L jetson-nano-baseboard:GND #GND_0126
+U 1 1 61CD84D2
+P 10425 5550
+F 0 "#GND_0126" H 10425 5550 20  0001 C CNN
+F 1 "GND" H 10441 5415 30  0000 C CNN
+F 2 "" H 10425 5550 70  0001 C CNN
+F 3 "" H 10425 5550 70  0001 C CNN
+	1    10425 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10175 5850 10425 5850
+Wire Wire Line
+	10425 5850 10425 5550
+$Comp
+L jetson-nano-baseboard:GND #GND_0139
+U 1 1 61CD84DA
+P 8725 5550
+F 0 "#GND_0139" H 8725 5550 20  0001 C CNN
+F 1 "GND" H 8741 5415 30  0000 C CNN
+F 2 "" H 8725 5550 70  0001 C CNN
+F 3 "" H 8725 5550 70  0001 C CNN
+	1    8725 5550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8975 5850 8725 5850
+Wire Wire Line
+	8725 5850 8725 5550
+NoConn ~ 8975 5950
+NoConn ~ 8975 6050
+NoConn ~ 8975 6250
+NoConn ~ 8975 6550
+NoConn ~ 8975 6750
+NoConn ~ 8975 6850
+NoConn ~ 10175 6750
+NoConn ~ 10175 6850
+NoConn ~ 10175 6550
+NoConn ~ 10175 6250
+NoConn ~ 10175 6050
+NoConn ~ 10175 5950
+$Comp
+L jetson-nano-baseboard:WE_632723300011 J5
+U 1 1 6283AAB4
+P 9175 5750
+F 0 "J5" H 9179 5905 60  0000 L BNN
+F 1 "632723300011" H 9179 5780 60  0000 L BNN
+F 2 "jetson-nano-baseboard-footprints:WE_632723300011" H 9175 5750 60  0001 C CNN
+F 3 "" H 9175 5750 60  0001 C CNN
+F 4 "Wurth Elektronik" V -1525 1157 60  0001 C CNN "Manufacturer"
+F 5 "632723300011" H -33796 -10355 50  0001 C CNN "MPN"
+	1    9175 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L jetson-nano-baseboard:GND #GND_0140
+U 1 1 61D929E4
+P 8925 7250
+F 0 "#GND_0140" H 8925 7250 20  0001 C CNN
+F 1 "GND" H 8941 7115 30  0000 C CNN
+F 2 "" H 8925 7250 70  0001 C CNN
+F 3 "" H 8925 7250 70  0001 C CNN
+	1    8925 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8975 6450 0    50   Input ~ 0
+OTG_USB_D_N
+Text GLabel 8975 6350 0    50   Input ~ 0
+OTG_USB_D_P
+Text GLabel 10175 6350 2    50   Input ~ 0
+OTG_USB_D_N
+Text GLabel 10175 6450 2    50   Input ~ 0
+OTG_USB_D_P
+Text Label 7025 5950 0    50   ~ 0
+OTG_VBUS
+Text Label 8975 6150 2    50   ~ 0
+OTG_VBUS
+Text Label 8975 6650 2    50   ~ 0
+OTG_VBUS
+Text Label 10175 6150 0    50   ~ 0
+OTG_VBUS
+Text Label 10175 6650 0    50   ~ 0
+OTG_VBUS
+NoConn ~ 7825 6600
+NoConn ~ 7725 6600
+NoConn ~ 6925 6600
+NoConn ~ 6825 6600
 $EndSCHEMATC
