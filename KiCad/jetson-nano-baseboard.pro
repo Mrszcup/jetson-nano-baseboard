@@ -1,4 +1,4 @@
-update=Tue 21 Dec 2021 11:24:04 AM CET
+update=Tue 21 Dec 2021 12:24:43 PM CET
 version=1
 last_client=kicad
 [general]
@@ -262,7 +262,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Z100_ext
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -273,7 +273,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Z100_in
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -284,7 +284,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=Z50_ext
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.15
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -295,7 +295,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=Z85_ext
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -306,7 +306,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=Z85_in
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -317,7 +317,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/6]
 Name=Z90_ext
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -328,7 +328,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/7]
 Name=Z90_in
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
@@ -339,7 +339,7 @@ dPairGap=0.125
 dPairViaGap=0.25
 [pcbnew/Netclasses/8]
 Name=supply
-Clearance=0.125
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.5
 ViaDrill=0.15
