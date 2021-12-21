@@ -1,4 +1,4 @@
-21465837638184986
+21474056522383986
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83090,13 +83090,6 @@ WE-RJ45_Transformer-10/100/1000
 16
 16
 antmicro-footprints
-7499111615
-7499111615-2
-Connector
-0
-19
-19
-antmicro-footprints
 7499511611A
 <b>WE-RJ45 LAN Transformer<br></b>10/100/1000 Base-T
 
@@ -84010,6 +84003,13 @@ antmicro-footprints
 62000421121
 
 
+0
+4
+4
+antmicro-footprints
+62100421821
+surface-mounted straight pin header, 2x02, 1.27mm pitch, double rows
+Surface mounted pin header SMD 2x02 1.27mm double row
 0
 4
 4
@@ -88354,6 +88354,13 @@ http://www.bourns.com/docs/Product-Datasheets/4600x.pdf
 9
 9
 antmicro-footprints
+SIP32431DR3-T1GE3
+
+
+0
+6
+6
+antmicro-footprints
 SM20B-SRSS-TB
 
 
@@ -91326,8 +91333,15 @@ jetson-nano-baseboard-footprints
 
 
 0
-71
-70
+69
+69
+jetson-nano-baseboard-footprints
+5-2337992-8
+
+
+0
+20
+20
 jetson-nano-baseboard-footprints
 0402
 
@@ -91406,12 +91420,26 @@ http://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C230KFKT_5-24-06.
 2
 2
 jetson-nano-baseboard-footprints
+1206-res
+http://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C230KFKT_5-24-06.pdf
+
+0
+2
+2
+jetson-nano-baseboard-footprints
 2129320-3
 
 
 0
 26
 25
+jetson-nano-baseboard-footprints
+9774025151
+
+
+0
+1
+1
 jetson-nano-baseboard-footprints
 CON-Molex-047346-0001
 
@@ -91454,6 +91482,13 @@ hdmi micro type d right angle tht
 0
 23
 20
+jetson-nano-baseboard-footprints
+HRS_DF17(4.0)-50DS-0.5V(57)
+
+
+0
+52
+52
 jetson-nano-baseboard-footprints
 HVQFN24
 
