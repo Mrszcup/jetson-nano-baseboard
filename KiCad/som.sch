@@ -55,8 +55,6 @@ Text GLabel 12800 4025 1    50   Input ~ 0
 5V0_SYS
 Text GLabel 14125 2050 0    50   Input ~ 0
 5V0_SYS
-Text GLabel 13650 9225 0    50   Input ~ 0
-EGND
 Text Notes 500  750  0    118  ~ 24
 SoM
 Text GLabel 1625 950  1    50   Input ~ 0
@@ -941,8 +939,6 @@ Wire Wire Line
 	13775 2725 13775 2600
 Wire Wire Line
 	13775 2600 14275 2600
-Wire Wire Line
-	13650 9225 13725 9225
 $Comp
 L jetson-nano-baseboard:GND #GND_052
 U 1 1 5E71041A
@@ -1654,4 +1650,19 @@ Text GLabel 6450 3450 0    50   Input ~ 0
 SPI0_MISO
 Text GLabel 6450 3350 0    50   Input ~ 0
 SPI0_SCK
+$Comp
+L jetson-nano-baseboard:GND #GND_?
+U 1 1 623364F3
+P 13575 9300
+F 0 "#GND_?" H 13575 9300 20  0001 C CNN
+F 1 "GND" H 13570 9137 30  0000 C CNN
+F 2 "" H 13575 9300 70  0001 C CNN
+F 3 "" H 13575 9300 70  0001 C CNN
+	1    13575 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13725 9225 13575 9225
+Wire Wire Line
+	13575 9225 13575 9300
 $EndSCHEMATC
