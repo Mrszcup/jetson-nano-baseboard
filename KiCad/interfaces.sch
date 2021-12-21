@@ -1072,4 +1072,49 @@ F 5 "TE Connectivity" H 13375 4851 50  0000 C CNN "Manufacturer"
 	1    11375 4725
 	1    0    0    -1  
 $EndComp
+$Comp
+L jetson-nano-baseboard:62100421821 J3
+U 1 1 621FE060
+P 11725 6625
+F 0 "J3" H 11725 6816 60  0000 C CNN
+F 1 "62100421821" H 12425 7325 60  0001 C CNN
+F 2 "jetson-nano-baseboard-footprints:621304242921" H 11950 7225 60  0001 L CNN
+F 3 "https://www.we-online.com/catalog/datasheet/62100421821.pdf" V 11925 7175 60  0001 L CNN
+F 4 "62100421821" H 11950 7425 60  0001 L CNN "MPN"
+F 5 "Wurth Elektronik" H 11950 7525 60  0001 L CNN "Manufacturer"
+	1    11725 6625
+	1    0    0    -1  
+$EndComp
+Text Label 12675 5975 2    50   ~ 0
+ENET_VC1
+Wire Wire Line
+	12675 5975 12825 5975
+Wire Wire Line
+	12675 6075 12825 6075
+Wire Wire Line
+	12675 6175 12825 6175
+Wire Wire Line
+	12675 6275 12825 6275
+Text Label 12675 6075 2    50   ~ 0
+ENET_VC2
+Text Label 12675 6175 2    50   ~ 0
+ENET_VC3
+Text Label 12675 6275 2    50   ~ 0
+ENET_VC4
+Text Label 11375 6575 2    50   ~ 0
+ENET_VC1
+Wire Wire Line
+	11375 6575 11525 6575
+Text Label 12075 6575 0    50   ~ 0
+ENET_VC2
+Wire Wire Line
+	11925 6575 12075 6575
+Text Label 11375 6675 2    50   ~ 0
+ENET_VC4
+Wire Wire Line
+	11525 6675 11375 6675
+Wire Wire Line
+	11925 6675 12075 6675
+Text Label 12075 6675 0    50   ~ 0
+ENET_VC3
 $EndSCHEMATC
